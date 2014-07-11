@@ -1,0 +1,133 @@
+#content {
+	background-color: #363636;
+}
+
+p {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	color: #C2C2C2;
+	width: 540px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+/*For the letters apokellypse*/
+#apokellypse {
+	position: aboslute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	left: 0;
+	right: 0; 
+	/*THANK YOU SO MUCH STACKOVERFLOW http://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+	text-align: center;
+	font-size: 5em;
+	font-family: sans-serif;
+	color: #959595;
+}
+
+
+.accent {
+	color: #EE71A2;
+	font-family: 'Lora';
+	font-size: 1.1em;
+}
+
+/*for all the help text when you hover over the link on the main page*/
+.small {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 125px;
+	left: 0;
+	right: 0; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 1.7em;
+	color: #EE71A2;
+}
+
+hr {
+	color: #959595;
+	/*for shortening the hr, use margin, not padding*/
+	margin: 40px 10%;
+	border: none;
+	height: 2px;
+	color: #959595;
+	background-color: #959595;	
+}
+
+/*Preventing you from selecting the text. Because annoyances*/
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ .right {
+	position: absolute;
+	margin: 0 auto;
+	top: 115px;
+	left: 400px;
+	right: 0; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 3em;
+	color: #959595;
+	width: 145px;
+	z-index: 10;
+}
+
+ .left {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	top: 115px;
+	right: 420px; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 3em;
+	color: #959595;
+	width: 145px;
+	z-index: 10;
+}
+
+pre {
+	margin: 0;
+}
+
+.link {
+	text-decoration: underline;
+	/*font-weight: bold;*/
+}
+
+a:link {
+	color: #959595;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #9DCD5B;
+	*/
+	color: #959595;
+	text-decoration: none;
+}
+
+a.legallyblonde {
+	color: #9DCC5A;
+	text-decoration: none;
+}
+
+a.legallyblonde:hover {
+	padding: 0px 10px;
+	border: 1px dashed #959595;
+}
+
+a:hover, .selected{
+	color: #9DCC5A;
+	text-decoration: none;
+}

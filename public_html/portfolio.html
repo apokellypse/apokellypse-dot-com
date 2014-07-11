@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kelly Yu">
+		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
+		<title>Kelly Yu | Portfolio</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="images/tabicondark2.png" >
+		<script type="text/javascript">
+		var assigned = 4;
+		</script>
+		<script type="text/javascript" src="scripts/master.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="scripts/sample.js"></script>
+		<script type="text/javascript" src="scripts/sample2.js"></script>
+	</head>
+	<body id="content">
+		<div class="noselect" id="apokellypse">
+				<span id="ab" 
+				onMouseOver="display('default', 'about me', 'portfolio');dehighlight('po')" 
+				onMouseOut="display('default', 'portfolio','portfolio');highlight('po');reset('default', 4)">
+				<a href="about.html"> a 
+				</a></span>
+				<span id="pr"
+				onMouseOver="display('default', 'projects', 'portfolio');dehighlight('po')" 
+				onMouseOut="display('default', 'portfolio', 'portfolio');highlight('po');reset('default', 4)">
+				<a href="projects.html"> p </a></span>
+				<span id="od"
+				onMouseOver="display('default', 'odds & ends', 'portfolio');dehighlight('po')" 
+				onMouseOut="display('default', 'portfolio', 'portfolio');highlight('po');reset('default', 4)">
+				<a href="odds&ends.html"> o </a></span>
+
+				<span id="kelly" 
+				onMouseOver="display('default', 'home', 'portfolio');dehighlight('po')" 
+				onMouseOut="display('default', 'portfolio', 'portfolio');highlight('po');reset('default', 4)">
+				<a href="home.html">
+				<span>k</span>
+				<span>e</span>
+				<span>l</span>
+				<span>l</span>
+				<span>y</span>
+				</a>
+				</span>
+
+				<a href="portfolio.html"><span id="po" class="selected">p </span></a>
+
+				<span id="sk"
+				onMouseOver="display('default', 'skills & experience', 'portfolio');dehighlight('po')" 
+				onMouseOut="display('default', 'portfolio', 'portfolio');highlight('po');reset('default', 4)">
+				<a href="skills.html"> s </a></span>
+				<span id="ex"
+				onMouseOver="display('default', 'extracurriculars', 'portfolio');dehighlight('po')" 
+				onMouseOut="display('default', 'portfolio', 'portfolio');highlight('po');reset('default', 4)">
+				<a href="extra.html"> e </a></span>
+		</div>
+		<span class="noselect left">
+			<a href="#" onClick="goLeft('default')"><pre>&lt;!--</pre></a>
+		</span>
+		<span class="noselect right">
+			<a href="#" onClick="goRight('default')"><pre>--&gt;</pre></a>
+		</span>
+		<div class="noselect small"><span class="accent"><a href="portfolio.html" class="legallyblonde" id="default">portabello</a></span></div>
+		
+		<hr>
+		
+		<div class="imgur">
+			
+			<a href="#jump1"><img id="foto" src="images/bridge.jpg" alt="photography"/></a>
+			<a href="#jump2"><div id="skater">
+				<img src="http://i.imgur.com/fhSFBGY.gif" alt="2014 Animation"/>
+			</div></a>
+			<a href="#jump3"><img id="fart" src="images/nemo.jpg" alt="art"/></a>
+			<!--probs a better way to structure this...-->
+			<div id="triplepane">
+				<p class="panellabel"><a href="#jump1">Photography</a></p>
+				<p class="panellabel"><a href="#jump2">Animation</a></p>
+				<p class="panellabel"><a href="#jump3">Art</a></p>
+			</div>
+		</div>
+		
+		<div class="photoslide" id="jump1">
+			<!--Made Possible By: http://www.webchiefdesign.co.uk/blog/simple-jquery-slideshow/-->
+			<div id="slideshow">
+				<div id="slideshowWindow">
+				
+					<div class="slide">
+						<img src="images/slide1.jpg">
+						<div class="slideText">
+							<h2 class="slideTitle">Slide 1</h2>
+							<p class="slideDes">Lorem ipsummy</p>
+							<p class="slideLink"><a href="#">clicky</a></p>
+						</div>
+					</div>
+					
+					<div class="slide">
+						<img src="images/slide2.jpg">
+						<div class="slideText">
+							<h2 class="slideTitle">Slide 2</h2>
+							<p class="slideDes">Lory</p>
+							<p class="slideLink"><a href="#">clicky</a></p>
+						</div>
+					</div>
+					
+					<div class="slide">
+						<img src="images/slide3.jpg">
+						<div class="slideText">
+							<h2 class="slideTitle">Slide 3</h2>
+							<p class="slideDes">Lobsters</p>
+							<p class="slideLink"><a href="#">clicker</a></p>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<div class="photoslide" id="jump2">
+		<iframe src="http://www.youtube.com/embed/videoseries?list=PLtkghshipDjVQZTGs-LAdAGgdyEMgVJuO" 
+		width="100%" height="500" frameborder="0" allowfullscreen>
+		</iframe>
+
+		</div>
+		
+		<div class="photoslide" id="jump3">
+			<div id="slideshow2">
+				<div id="slideshowWindow2">
+					<div class="slide2">
+						<img src="images/slide4.jpg">
+						<div class="slideText">
+							<h2 class="slideTitle">Slide 1</h2>
+							<p class="slideDes">Lorem ipsummy</p>
+							<p class="slideLink"><a href="#">clicky</a></p>
+						</div>
+					</div>
+					
+					<div class="slide2">
+						<img src="images/slide5.jpg">
+						<div class="slideText">
+							<h2 class="slideTitle">Slide 2</h2>
+							<p class="slideDes">Lory</p>
+							<p class="slideLink"><a href="#">clicky</a></p>
+						</div>
+					</div>
+					
+					<div class="slide2">
+						<img src="images/slide6.jpg">
+						<div class="slideText">
+							<h2 class="slideTitle">Slide 3</h2>
+							<p class="slideDes">Lobsters</p>
+							<p class="slideLink"><a href="#">clicker</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

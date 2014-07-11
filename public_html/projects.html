@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kelly Yu">
+		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
+		<title>Kelly Yu | Projects</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="images/tabicondark2.png" >
+		<script type="text/javascript">
+		var assigned = 1;
+		</script>
+		<script src="scripts/master.js"></script>
+	</head>
+	<body id="content">
+		<div class="noselect" id="apokellypse">
+			<span id="ab"
+			onMouseOver="display('default', 'about me', 'projects');dehighlight('pr')"
+			onMouseOut="display('default', 'projects', 'projects');highlight('pr');reset('default', 1)">
+			<a href="about.html"> a </a></span>
+			
+			<a href="projects.html"><span id="pr" class="selected"> p </span></a>
+			
+			<span id="od"
+			onMouseOver="display('default', 'odds & ends', 'projects');dehighlight('pr')"
+			onMouseOut="display('default', 'projects', 'projects');highlight('pr');reset('default', 1)">
+			<a href="odds&ends.html"> o </a></span>
+			<span id="kelly"
+			onMouseOver="display('default', 'home', 'projects');dehighlight('pr')"
+			onMouseOut="display('default', 'projects', 'projects');highlight('pr');reset('default', 1)">
+			<a href="home.html">
+			<span>k</span>
+			<span>e</span>
+			<span>l</span>
+			<span>l</span>
+			<span>y</span>
+			</a>
+			</span>
+			
+			<span id="po"
+			onMouseOver="display('default', 'portfolio', 'projects');dehighlight('pr')"
+			onMouseOut="display('default', 'projects', 'projects');highlight('pr');reset('default', 1)">
+			<a href="portfolio.html">p </a></span>
+			<span id="od"
+			onMouseOver="display('default', 'skills & experience', 'projects');dehighlight('pr')"
+			onMouseOut="display('default', 'projects', 'projects');highlight('pr');reset('default', 1)">
+			<a href="skills.html"> s </a></span>
+			<span id="ex"
+			onMouseOver="display('default', 'extracurriculars', 'projects');dehighlight('pr')"
+			onMouseOut="display('default', 'projects', 'projects');highlight('pr');reset('default', 1)">	
+			<a href="extra.html"> e </a></span>
+		</div>
+		
+		<span class="noselect left">
+			<a href="#" onClick="goLeft('default')"><pre>&lt;!--</pre></a>
+		</span>
+		<span class="noselect right">
+			<a href="#" onClick="goRight('default')"><pre>--&gt;</pre></a>
+		</span>
+		<div class="noselect small"><span class="accent"><a href="projects.html" class="legallyblonde" id="default">protests</a></span></div>
+		
+		<hr>
+		<div class="panes">
+			<p class="boxxy">
+			<!--
+			<span><a href="home.html"><span class="link"><span class="a">Back</span></span></a><br> -->
+			Here is where I showcase my <span class="selected">independent and academic CS projects</span>.
+			<br>Displayed here are only completed projects. To see things I am currently working on, check out <a href="http://testing.apokellypse.com"><span class="link">my testing site</span></a> for <span class="selected">demos and other webby things</span>.
+			<br>
+			<br></p>
+			
+			<!--
+			<p class="centerdat"><a href="#independent">Jump to Independent Projects</a>
+			<br><a href="#academic">Jump to Academic Projects</a></p>
+			-->
+			
+			<p class="boxxy"><span class="accent">BrickBreaker, CS 1110</span>
+			<br>Although simple and ordinary, BrickBreaker is included on my website because nostalgia. I did this with <a target="_blank" href="#victoria.beall"><span class="link">Victoria Beall</span></a>, my partner for the class. In retrospect, this was a <span class="selected">pretty fun assignment</span>, even though I was stuck on one function for a week because I wasn't careful with recursion.</p>
+			
+			<p class="boxxy">BrickBreaker was a good project because it introduced me to the <span class="selected">MVC design pattern</span> and how to effectively use states to represent different modes the game could be in at any given moment.</p>
+			
+			<p class="boxxy">My first game of BrickBreaker was <span class="selected">done in Python</span>, but I will probably 
+			<br>re-implement BrickBreaker in Javascript and link it to this page 
+			<br> for kicks and giggles.
+			<br>
+			<br></p>
+			
+			<p class="boxxy"><span class="accent">CritterWorld, CS 2112</span>
+			<br>If you ask me what Spring 2014 tasted like, I'd say it tasted like CritterWorld. I spent eons of time on this project with my partner 
+			<br> <a target="_blank" href="http://www.awarmwalr.us"><span class="link">Charlie Qian</span></a>. The last four assignments in CS 2112 <del>culminate</del> cumulate into <span class="selected">a giant project</span> known <del>infamously</del> as CritterWorld.</p>
+			
+			<p class="boxxy">CritterWorld involved <span class="selected">parsing & fault injection</span> <a target="_blank" href="downloads/a4.pdf">[spec]</a>, 
+			<br><span class="selected">interpreters</span> <a target="_blank" href="downloads/a5.pdf">[spec]</a>, <span class="selected">working with Java GUIs 
+			<br>& this thing called FXML</span> <a target="_blank" href="downloads/a6.pdf">[spec]</a>, and <span class="selected">networks</span> <a target="_blank" href="downloads/a7.pdf">[spec]</a>.</p>
+			
+			<p class="boxxy">I also developed some <a target="_blank" href="#artthing">character art</a> and <a target="_blank" href="#artthing2">UI design</a> for the game which did not make the final cut because the fire nation attacked. Overall, this project made me <span class="selected">stronger as a programmer and as a person</span>, but there are hours upon hours of sleep I fear I'll never be able to quite make up.
+			<br>
+			<br></p>
+			
+			
+			<p class="boxxy"><span class="accent">PleaseCall, Bloomberg Hackathon Feb 2014</span>
+			<br>I worked with <a target="_blank" href="#junia.george"><span class="link">Junia George</span></a>, <a target="_blank" href="#dashiell.brown"><span class="link">Dashiell Brown</span></a>, <a target="_blank" href="#leon.zaruvinsky"><span class="link">Leon Zaruvinsky</span></a>, and <a target="_blank" href="#keshav.verma"><br><span class="link">Keshav Verma</span></a> to produce our app titled "PleaseCall".</p>
+			
+			<p class="boxxy">PleaseCall is an Android app designed to provide flexible functionality as a <span class="selected">reminder system for college students</span> who may need to be prompted to call back home. It tracks the <span class="selected">number of days spent without calling and/or texting</span> and will send alerts to the student every set number of days.</p>
+			
+			<p class="boxxy">My role on the team was varied; I did some <span class="selected">UI design using XML and worked on some of the database using MySQL</span>. Most of my time was spent studying the Android documentation and learning how to use Git. As this was my first hackathon, I had a lot of learning to do.</p>
+			
+			<p class="boxxy">We presented our app 24 hours later and were declared winners. Each of us <span class="selected">received a Leap Motion</span>, which was an exciting prospect because of how Leap Motion can be used with Unity.
+			<br>
+			<br></p>
+			
+			
+			<p class="boxxy"><span class="accent">Personal Website</span>
+			<br>:D</p>
+			
+		</div>
+		
+		<!--
+		<p><span class="selected">Resolved page errors:</span></p>
+		<ul>
+			<li>Hovering over the second "p" should not highlight first "p"; also does not display the "portfolio" text as expected</li>
+			<li>Fix: don't forget your closing &lt;/a&gt; tags.</li>					
+		</ul>		
+		-->
+	</body>
+</html>

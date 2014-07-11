@@ -1,0 +1,91 @@
+#content {
+	background-color: #ECECEC;
+}
+
+#ribbon {
+	background-color: #2D73B9;
+	font-size: 1.5em;
+	font-family: 'Cabin';
+	color: #EBECF6;
+	padding: 0 0 0 2vw;
+	margin-top: 5vh;
+	height: 120px;
+	box-shadow: 0px 3px 4px 3px #7C9BCF;
+	margin-bottom: 0;
+}
+
+#hsctc{
+	width: auto;
+	text-align:left;
+	margin-top: 4vh;
+	display: inline-block;
+	margin-right: 2vw;
+}
+
+#social {
+	float:right;
+	padding: 20px;
+}
+
+#toolbar {
+	width: 80vw;
+	display: inline-block;
+}
+
+.small {
+	font-size: .9em;
+}
+
+.button {
+	display: inline-block;
+	width: 8vw;
+	margin-right: 1vw;
+	padding-left: 1vw;
+}
+
+.social {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-color: #497FBF;
+	text-align: center;
+}
+
+/*
+#search {
+	width: auto;
+	text-align: right;
+	display: inline-block;
+	margin-left: 2%;
+	padding-right: 2%;
+}
+*/
+
+#logo {
+	width: 3;
+	height: 120px;
+	float: left;
+	margin-right: 2vw;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: #EE71A2;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #9DCD5B;
+	*/
+	color: #EE71A2;
+	text-decoration: none;
+}
+
+a:hover, .selected{
+	color: #9DCC5A;
+	text-decoration: none;
+}

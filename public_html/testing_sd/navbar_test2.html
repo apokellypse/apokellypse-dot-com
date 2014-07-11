@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--I like typing my html pages from scratch, because if from-scratch cookies can taste better than store bought, from-scratch web pages should taste better too.-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kelly Yu">
+		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
+		<title>Kelly Yu | Home</title>
+		<!--There has GOT to be a better way to link these-->
+		<link rel="stylesheet" href="http://apokellypse.com/css/normalize.css">
+		<link rel="stylesheet" href="http://apokellypse.com/css/main.css">
+		<link rel="stylesheet" href="css/dropdown.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="tabicondark2.png">
+		
+		<!--check out http://jsfiddle.net/akhurshid/XbjAe/ -->
+		<!-- latest jQuery direct from google's CDN -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="http://jscrollpane.kelvinluck.com/script/jquery.mousewheel.js"></script>
+
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="http://jscrollpane.kelvinluck.com/script/jquery.jscrollpane.min.js"></script>
+    
+		<script type="text/javascript" >
+        $(function() {
+            $('.scroll-pane').jScrollPane();
+        });        
+		</script>
+		<script type="text/javascript">
+		//////////////////////FOR THE HEADER/////////////////////////
+		
+		function swap(one, two) {
+			document.getElementById(one).style.display = 'block';
+			document.getElementById(two).style.display = 'none';
+		}
+		function show(element) {
+			document.getElementById(element).style.display = 'block';
+		}
+		function hide(element) {
+			document.getElementById(element).style.display = 'none';
+		}
+		//technically I could condense functions by making a single function for show/hide using a toggle but whatever
+		function highlight(element) {
+			document.getElementById(element).style.color = '#9DCC5A';
+		}
+		function dehighlight(element) {
+			document.getElementById(element).style.color = '#959595';
+		}
+		//function aInfo() {
+			//var text = "About Me"
+			//get the element that you want to change
+			//var info = document.getElementById("<%= info.ClientID %>");
+			//info.value = text;
+		//}
+		function travel(url) {
+			window.location = url;
+		}
+		
+        </script>
+		<script type="text/javascript">
+		$("#container").scroll(function() {
+			this.scrollTop = parseInt(this.scrollTop / 84) * 84;
+		});
+		</script>
+
+	</head>
+	
+	<body id="content">
+		<div class="noselect" id="apokellypse">
+		<!--I considered using font first for the logo/navigation panel, but apparently that's bad practice - whoops.
+		Guess I'll have to use images/image maps now. -->
+			<!--<p class="noselect" id="apokellypse" > -->
+				<span 
+				onMouseOver="dehighlight('kelly');travel('#about')" 
+				onMouseOut="highlight('kelly');travel('#me')">
+				<a href="navbar_test2.html#me">a
+					<!--<span class="hasinfo">About Me</span>-->
+					<!--the above was a messy experiment -->
+				</a></span>
+				<span 
+				onMouseOver="dehighlight('kelly');travel('#projects')" 
+				onMouseOut="highlight('kelly');travel('#me')">
+				<a href="navbar_test2.html#me">p </a></span>
+				<span 
+				onMouseOver="dehighlight('kelly');travel('#odds')" 
+				onMouseOut="highlight('kelly');travel('#me')">
+				<a href="navbar_test2.html#me">o </a></span>
+				<!--Using span introduces these weird spaces between the letters-->
+				<!--disable clicking on home when you're one home
+				
+				<span onMouseOver="show('home_main')" onMouseOut="hide('home_main')"><a href="home.html">
+				-->
+				<span id="kelly" class="selected">
+				<span>k</span>
+				<span>e</span>
+				<span>l</span>
+				<span>l</span>
+				<span>y</span>
+				</span>
+				<!--</a>
+				</span>
+				-->
+				<span 
+				onMouseOver="dehighlight('kelly');travel('#port')" 
+				onMouseOut="highlight('kelly');travel('#ho')">
+				<a href="navbar_test2.html#ho">p </a></span>
+				<span 
+				onMouseOver="dehighlight('kelly');travel('#skills')" 
+				onMouseOut="highlight('kelly');travel('#ho')">
+				<a href="navbar_test2.html#ho">s </a></span>
+				<span 
+				onMouseOver="dehighlight('kelly');travel('#extra')" 
+				onMouseOut="highlight('kelly');travel('#ho')">
+				<a href="navbar_test2.html#ho">e </a></span>
+				<!--<br>
+				<button id="info" class="astext" value="button" disabled></button> -->
+			<!--</p>-->
+		</div>
+		<div id="container" class="menu noselect">
+			<pre><a href="navbar_test2.html#me"><span class="accent"><span id="about"> </span>             about me           </span></a><a href="navbar_test2.html#me"><span class="accent"><span id="projects"> </span>              projects            </span></a><a href="navbar_test2#me.html"><span class="accent"><span id="odds"> </span>          odds & ends              </span></a><a href="navbar_test2#ho.html"><span class="accent"><span id="ho"> </span>                home                <span id="me"> </span></span></a><a href="navbar_test2.html#ho"><span class="accent">              portfolio             <span id="port"> </span></span></a><a href="navbar_test2.html#ho"><span class="accent">       skills & experience  <span id="skills">   </span>  </span></a><a href="navbar_test2.html#ho"><span class="accent">  extracurriculars        </span></a><span id="extra"> </span></pre>
+		</div>
+		<hr>
+		<p class="paragraph">Hi there. Welcome to my website! Feel free to poke around. It is currently in development so pages may disappear, URLs may change, and so on. In the meantime check out 
+		<a href="projects.html"><span class="link accent">my projects</span></a>!
+		<br>
+		<br>
+		<span class="selected">Announcement!</span> <a href="about.html"><span class="link accent">about</span></a> page has been recently completed.
+		<br>
+		<br>
+		I'd like to put a blog on here. I think that requires knowing PHP - thank you Suni for letting me borrow the PHP book!
+		<br>
+		<br>
+		<span class="selected">Projected Completion Date: June 30th.</span></p>
+	</body>
+</html>
+	
+				

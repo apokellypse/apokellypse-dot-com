@@ -1,0 +1,111 @@
+#content, html {
+	background-color: #252525;
+	height: 100%;
+	overflow:hidden;
+	font-family: 'Lato';
+}
+
+/*the middle column*/
+.mainbox {
+	display: block;
+	width: 50%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	/*margin-top: 10%;*/
+	color: #C2C2C2;
+	background-color: #363636;
+	/*box-shadow: 2px 2px 15px -2px #121212;*/
+	padding: 0%, 8%, 0%, 8%;
+	box-shadow: 0px 0px 6px 2px #121212;
+}
+
+.misstable {
+	padding-top: 1%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 1%;
+}
+
+.block {
+	padding-top: 2%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 2%;
+	box-shadow: 0px 0px 6px 2px #121212;
+}
+
+#list {
+	height: 40vh;
+	overflow: auto;
+}
+
+.space {
+	height: 2%;
+	box-shadow: 0px 0px 6px 2px #121212;
+}
+
+.space2 {
+	height: 1%;
+	box-shadow: 0px 0px 6px 2px #121212;
+}
+
+.dino {
+	font-size: 2em;
+	color: #9DCC5A;
+	font-family: 'Lora';
+}
+
+.label {
+	padding: 0;
+	font-size:1.5em;
+	color: #9DCC5A;
+	font-family: 'Lora';
+}
+
+.accent {
+	color: #EE71A2;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+hr {
+	color: #959595;
+	/*for shortening the hr, use margin, not padding*/
+	margin: 3% 10% 3% 10%;
+	border: none;
+	padding: -50px;	
+	height: 2px;
+	color: #959595;
+	background-color: #959595;	
+}
+
+/*Preventing you from selecting the text. Because annoyances*/
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+a:link {
+	color: #EE71A2;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #9DCD5B;
+	*/
+	color: #EE71A2;
+	text-decoration: none;
+}
+
+a:hover, .selected{
+	color: #9DCC5A;
+	text-decoration: none;
+}

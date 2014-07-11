@@ -1,0 +1,116 @@
+body {
+	text-align: center;
+	background: url(http://www.minkbooks.com/content/bricks2.jpg);
+}
+
+#mainbox {
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	
+	/*
+	background: #FFFFFF;
+	
+	background: -moz-linear-gradient(30deg, #FFFFFF, #666666, #000000);
+	background: -webkit-linear-gradient(top right, #FFFFFF, #666666);
+	
+	
+	background: -moz-linear-gradient(top, #FFFFFF 50%, #666666 90%);
+	background: -moz-radial-gradient(center, ellipse, #FFFFFF, #000000);
+	background: -webkit-radial-gradient(30px 50px, ellipse, #FFFFFF 50%, #666666 70%, #999999 90%;
+	
+	
+	
+	background: -moz-linear-gradient(top, transparent, #666666);
+	border: 1px solid #999999;
+	border-radius: 40px / 10px; /*elliptical corners
+	box-shadow: rgb(150,150,150) 5px 5px 10px 2px inset;
+	
+	outline: 2px dashed #000000;
+	outline-offset: 15px;
+	
+	border: 29px solid;
+	
+	-moz-border-image: url("diamonds.png") 29 stretch;
+	background: color image position / size repeat origin clip attachment*/
+	background: #CCCCCC url("bricks2.png") 10px 10px / 510px 55px no-repeat scroll border-box;
+	
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-moz-column-rule: 1px solid #000000;
+	
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	-webkit-column-rule: 1px solid #000000;
+	
+	/*
+	-webkit-filter: blur(5px);
+	/*blur(value), grayscale(value), drop-shadow(x,y,size,color), sepia(value), brightness(value), contrast(avlue), hue-rotate(value), invert(value), saturate(avlue), opacity(avlue)*/
+	
+	/*-webkit-transform: scale(2);
+	-moz-transform: scale(-2, 2);
+	-moz-transform: rotate(30deg);
+	-moz-transform: skew(20deg, 20deg);
+	-moz-transform: translate(100px); */
+	
+	-moz-transform: translate(100px, 2px) rotate(10deg) scale(2,2);
+	-webkit-transform: translate(100px, 2px) rotate(10deg) scale(2,2);
+	
+	/*the order of translate, rotate, and scale matters (pivot point changed, center point changed?*/
+	-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+	-webkit-animation: myanimation 1s ease-in-out 0s infinite normal none;
+	animation: myanimation 1s ease-in-out 0s infinite normal none;
+	
+}
+
+#mainbox:hover {
+	-moz-transform: rotate(5deg);
+	-moz-transform: perspective(500px) rotate3d(0,1,0,360deg);
+	-webkit-transform: rotate(5deg);
+	-webkit-transform: perspective(500px) rotate3d(0,1,0,360deg);
+	/*persective(), translate3d(x,y,z) scale3d(x,y,z) rotate3d(x,y,z,angle)
+	for rotate3d, the x,y,z determine the vector that acts as the axis of rotation*/
+	
+	/*-moz-transform: perspective(500px) translate3d(0,0,-300px) rotate3d(0,1,0,50deg);
+	
+	/*more properties include: perspective, perspective-origin, and backface-visibility*/
+	/*http://css-tricks.com/almanac/properties/t/transition/ */
+}
+
+@-moz-keyframes myanimation {
+	0% {
+		background: #FFFFFF;
+	}
+	50% {
+		background: #FF0000;
+	}
+	100% {
+		background: #FFFFFF;
+	}
+}
+
+@-webkit-keyframes myanimation {
+	0% {
+		background: #FFFFFF;
+	}
+	50% {
+		background: #FF0000;
+	}
+	100% {
+		background: #FFFFFF;
+	}
+}
+
+#title {
+	font: bold 36px MyFont, verdana, sans-serif;
+	text-shadow: rgba(150,150,150, 0.5) 3px 3px 5px;
+	color: hsla(120, 100%, 50%, 0.5);
+}
+
+@font-face {
+	font-family: 'MyFont';
+	src: url('font.ttf')
+}
+/*more fonts: http://moorstation.org/typoasis/designers/steffmann/ */

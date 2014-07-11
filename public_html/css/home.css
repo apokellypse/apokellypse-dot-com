@@ -1,0 +1,653 @@
+#content {
+	background-color: #222222;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\HOME PAGE////////////////////////////*/
+
+/*This is for the logo page, for the svg logo and "enter" text*/
+#svgenter, #welcomeobj {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	/* margin: 350px 150px 100px 700px; 
+	padding-left: 750px;
+	padding-top: 350px;*/
+}
+
+/*only for the enter text*/
+#enter {
+	position: relative;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3em;
+	width: 175px;
+	margin-left: 50vw;
+	margin-top: 42vh;
+	color: #959595;
+}
+
+.rotate { /*Thank you css-tricks.com you are amazing*/
+
+/* Safari */
+-webkit-transform: rotate(-62deg);
+
+/* Firefox */
+-moz-transform: rotate(-62deg);
+
+/* IE */
+-ms-transform: rotate(-62deg);
+
+/* Opera */
+-o-transform: rotate(-62deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\CONTENT//////////////////////////////*/
+
+p.paragraph {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	color: #C2C2C2;
+	width: 540px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+/*for small gray text on the "extra" page*/
+.date {
+	text-align: right;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+	color: #959595;
+	margin: 0 10px;
+}
+
+/*for most paragraphs*/
+.boxxy {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.0em;
+	color: #C2C2C2;
+	padding: 0 10px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+/*centered paragraphs on the "other" page*/
+.centerdat {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.0em;
+	color: #C2C2C2;
+	padding: 0 10px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+/*social media icons*/
+#social {
+	width: 360px;
+	left: 0;
+	right: 0;
+	margin: 20px auto;
+}
+
+#goodreads {
+	width: 300px;
+	height: auto;
+}
+
+/*#fm {
+	padding-bottom: 20px;
+}*/
+
+#books {
+	margin: 50px;
+}
+
+/*//////////////////////////IMGUR//////////////////////////////*/
+
+.imgur {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	/*background: #2E2E2E;*/
+	background: #292929;
+	width: 720px;
+	height: 255px;
+	right: 0;
+	left: 0;
+	box-shadow: 0 0 20px 2px #1A1A1A;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#skater {
+	display: inline-block;
+	position: absolute;
+	margin: 20px 260px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0px #464646;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+}
+
+#skater img {
+	height: 100%;
+	margin-left: -35px;
+}
+
+#foto {
+	display: inline-block;
+	position: absolute;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0px #464646;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#fart { /*fart = fine art*/
+	display: inline-block;
+	position: absolute;
+	margin: 20px 20px 20px 500px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0px #464646;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#triplepane {
+	position: absolute;
+	margin-top: 210px;
+}
+
+.panellabel {
+	display: inline-block;
+	width: 200px;
+	margin: 20px;
+	text-align: center;
+	color: #EE71A2;
+	font-family: 'Lora';
+	font-size: 1.1em;
+}
+
+/*/////////////////////PORTFOLIO WRAPPERS//////////////////////*/
+
+.photoslide {
+	display: block;
+	margin: 150px auto;
+	padding: 10px;
+	background: #292929;
+	width: 720px;
+	height: auto;
+	right: 0;
+	left: 0;
+	/*-moz-box-shadow: 0 0 16px 6px #2B2B2B;
+	-webkit-box-shadow: 0 0 16px 6px #2B2B2B;
+	box-shadow: 0 0 16px 6px #2B2B2B;*/
+	box-shadow: 0 0 20px 2px #1A1A1A;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/*/////////////////////////////LIST SETTINGS///////////////////*/
+
+li{
+	text-align: left;
+	font-family: 'Lora', serif;
+	font-size: 1em;
+	color: #C2C2C2;
+	margin: 0;
+	padding: 0px 10px 0px 20px;
+	list-style: none;
+	line-height: 3.5em;
+	background: #303030;
+	box-shadow: 0 0 20px 0px #181818;
+	border-radius: 5px;
+	-moz-border-radius: 5px / 10px;
+	-webkit-border-radius: 5px 10px;
+}
+
+ul{
+	text-align: left;
+	font-family: 'Lora', serif;
+	font-size: 1em;
+	color: #C2C2C2;
+	margin: 0;
+	padding: 0px 10px 0px 20px;
+	list-style: none;
+	line-height: 4em;
+	background: #2E2E2E;
+	border-radius: 30px;
+	-moz-border-radius: 20px / 30px;
+	-webkit-border-radius: 20px 30px;
+}
+
+/*////////////////////////////PDF///////////////////////////*/
+
+#pdflink {
+	display: block;
+	/*width: 826px;*/
+	height: 1067px;
+	width: 842px;
+	/*height: 60vh;*/
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+	
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\HEADER//////////////////////////////*/
+
+/*For the letters apokellypse*/
+#apokellypse {
+	position: aboslute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	left: 0;
+	right: 0; 
+	/*THANK YOU SO MUCH STACKOVERFLOW http://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+	text-align: center;
+	font-size: 5em;
+	font-family: sans-serif;
+	color: #959595;
+}
+
+/*
+.selected {
+	color: #9DCC5A
+}
+*/
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\THE ARROWS////////////////////////////*/
+
+ .right {
+	position: absolute;
+	margin: 0 auto;
+	top: 115px;
+	left: 400px;
+	right: 0; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 3em;
+	color: #959595;
+	width: 145px;
+	z-index: 10;
+}
+
+ .left {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	top: 115px;
+	right: 420px; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 3em;
+	color: #959595;
+	width: 145px;
+	z-index: 10;
+}
+
+pre {
+	margin: 0;
+}
+
+
+/*for all the help text when you hover over the link on the main page*/
+.small {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 125px;
+	left: 0;
+	right: 0; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 1.7em;
+	color: #EE71A2;
+}
+
+hr {
+	color: #959595;
+	/*for shortening the hr, use margin, not padding*/
+	margin: 40px 10%;
+	border: none;
+	height: 2px;
+	color: #959595;
+	background-color: #959595;	
+}
+
+/*Preventing you from selecting the text. Because annoyances*/
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*//////////////////////EXTRA PAGE NAVIGATION////////////////////////*/
+/*nav bar on the "extra" page*/
+nav {
+	position: fixed;
+	text-align: left;
+	float: left;
+	width:27.5vw;
+}
+
+li.bar {
+	color: #C2C2C2;
+	font-size: 1.2em;
+}
+
+#jumptotop {
+	padding-left: 20px;
+	text-align: left;
+	line-height: 2em;
+}
+
+/*wrapping things for the 'extracurriculars' page*/
+.wrap {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: 100%;
+}
+
+/*padding for anchor/target jumps*/
+span.pad:before {
+	display: block;
+	content: " ";
+	margin-top: -50px;
+	height: 50px;
+	visibility: hidden;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\SCROLLING//////////////////////////////*/
+
+/*for the content that needs to be scrolled*/
+.scroll {
+	margin: 0 auto;
+	padding: 20px 10px;
+	background: #2E2E2E;
+	width: 600px;
+	height: 61vh;
+	overflow: auto;
+	box-shadow: 0 0 20px 2px #1A1A1A;
+	/*http://stackoverflow.com/questions/9707397/making-a-div-vertically-scrollable-using-css*/
+}
+
+.panes {
+	display: block;
+	margin: 0 10px 40px 30vw;
+	padding: 20px 10px;
+	/*background: #2E2E2E;*/
+	background: #2C2C2C;
+	width: 37.5vw;
+	height: 100%;
+	box-shadow: 0 0 20px 2px #1A1A1A;
+	/*http://stackoverflow.com/questions/9707397/making-a-div-vertically-scrollable-using-css*/
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/*I forgot what this is used for :( */
+.nav {
+	float: left;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	color: #C2C2C2;
+}	
+
+/*///////////////////////FOTO SLIDESHOW//////////////////////////////*/
+#slideshow #slideshowWindow, 
+#slideshow2 #slideshowWindow2 {
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 300px;
+	margin: 100px auto;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0px #464646;
+	
+}
+
+#slideshow #slideshowWindow .slide, 
+#slideshow2 #slideshowWindow2 .slide2 {
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 300px;
+	float: left;
+	position: relative;
+}
+
+#slideshow #slideshowWindow .slide .slideText {
+	position: absolute;
+	top: 130px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.3);
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.slideText {
+	position: absolute;
+	top: 130px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.3);
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+}
+
+#slideshow #slideshowWindow .slide .slideText a:link,
+#slideshow #slideshowWindow .slide .slideText a:visited ,
+#slideshow2 #slideshowWindow2 .slide2 .slideText a:link,
+#slideshow2 #slideshowWindow2 .slide2 .slideText a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#slideshow #slideshowWindow .slide .slideText h2,
+#slideshow #slideshowWindow  .slide .slideText p{
+	margin: 15px 0 0 15px;
+	padding: 0;
+	line-height: .7em;
+}
+
+.slideText h2, .slideText p {
+	margin: 15px 0 0 15px;
+	padding: 0;
+	line-height: .7em;
+}
+
+.navvy, .navvy2 {
+	display: block;
+	/*text-indent: -10000px;*/
+	cursor: pointer;
+}
+
+#leftNav {
+	position: absolute;
+	top: 270px;
+	left: 10px;
+	width: 200px;
+	height: 50px;
+	background-image: url(images/goleft.png);
+	background-repeat: no-repeat;
+	z-index: 999; /*is this really necessary pls*/
+}
+
+#leftNav2 {
+	position: absolute;
+	top: 270px;
+	left: 10px;
+	width: 200px;
+	height: 50px;
+	background-image: url(images/goleft.png);
+	background-repeat: no-repeat;
+	z-index: 999;
+
+}
+
+#rightNav {
+	position: absolute;
+	top: 270px;
+	right: 300px;
+	width: 100px;
+	height: 50px;
+	background-image: url(images/goright.png);
+	background-repeat: no-repeat;
+	z-index: 999;
+}
+
+#rightNav2 {
+	position: absolute;
+	top: 270px;
+	right: 300px;
+	width: 100px;
+	height: 50px;
+	background-image: url(images/goright.png);
+	background-repeat: no-repeat;
+	z-index: 999;
+}
+
+/*////////////////////////////SCROLLING/////////////////////////////*/
+
+/* http://css-tricks.com/hash-tag-links-padding/
+ http://codemug.com/html/custom-scrollbars-using-css/ */
+body {
+	/*Internet Explorer*/
+	scrollbar-base-color: #363636;
+	scrollbar-3dlight-color: #464646;
+	scrollbar-highlight-color: #464646;
+	scrollbar-track-color: #252525;
+	scrollbar-arrow-color: #9DCC5A;
+	scrollbar-shadow-color: #555555;
+	scrollbar-dark-shadow-color: #C2C2C2;
+}
+
+/*Chrome*/
+::-webkit-scrollbar {
+	width: 12px;
+}
+/*::-webkit-scrollbar-button {
+	background-color: #95CC5A;
+}*/
+	
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #363636;
+	background-color: #636363;
+}
+
+
+
+/*Displaying tips for navigation */
+/* This was an aborted experiment
+a span.hasinfo {
+	display: none;
+}
+
+a:hover span.hasinfo {
+	display: block;
+	position: absolute;
+	text-align: right;
+	font-size: 0.2em;
+}
+
+*/
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\TEXT FX//////////////////////////////*/
+
+.accent {
+	color: #EE71A2;
+}
+
+.accent {
+	color: #EE71A2;
+	font-family: 'Lora';
+	font-size: 1.1em;
+}
+
+.link {
+	text-decoration: underline;
+	/*font-weight: bold;*/
+}
+
+a:link {
+	color: #959595;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #9DCD5B;
+	*/
+	color: #959595;
+	text-decoration: none;
+}
+
+a:hover, .selected {
+	color: #9DCC5A;
+	text-decoration: none;
+}
+
+a.legallyblonde {
+	color: #9DCC5A;
+	text-decoration: none;
+}
+
+a.legallyblonde:hover {
+	padding: 0px 10px;
+	border: 1px dashed #959595;
+}
+
+.bar:hover span{
+	color: #9DCC5A;
+	text-decoration: none;
+}

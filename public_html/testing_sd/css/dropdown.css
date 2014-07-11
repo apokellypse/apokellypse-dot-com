@@ -1,0 +1,371 @@
+#content {
+	background-color: #363636;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\HOME PAGE//////////////////////////////*/
+
+
+/*for the home button alignment*/
+/*#home{
+	position: relative;
+	font-size: 2em;
+	text-align: right;
+} */
+
+/*This is for the logo page, for the svg logo and "enter" text*/
+#svgenter {
+	display: block;
+	color: #959595;
+	position: absolute;
+	/* margin: 350px 150px 100px 700px; */
+	padding-left: 750px;
+	padding-top: 350px;
+}
+
+/*only for the enter text*/
+#enter {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3em;
+	width: 175px;
+	margin-left: 250px;
+}
+
+/*This is used for the svg logo positioning*/
+object {
+	position: absolute;
+} 
+
+.rotate { /*Thank you css-tricks.com you are amazing*/
+
+/* Safari */
+-webkit-transform: rotate(-62deg);
+
+/* Firefox */
+-moz-transform: rotate(-62deg);
+
+/* IE */
+-ms-transform: rotate(-62deg);
+
+/* Opera */
+-o-transform: rotate(-62deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\CONTENT//////////////////////////////*/
+
+p.paragraph {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+	color: #C2C2C2;
+	width: 540px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+ul, li{
+	text-align: left;
+	font-family: 'Lora', serif;
+	font-size: 1em;
+	color: #C2C2C2;
+	margin: 0% 10%;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\HEADER//////////////////////////////*/
+
+/*For the letters apokellypse*/
+#apokellypse {
+	position: aboslute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	left: 0;
+	right: 0; 
+	/*THANK YOU SO MUCH STACKOVERFLOW http://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+	text-align: center;
+	font-size: 5em;
+	font-family: sans-serif;
+	color: #959595;
+}
+
+/*for all the help text when you hover over the link on the main page*/
+.small {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 125px;
+	left: 0;
+	right: 0; 
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 1.7em;
+	color: #EE71A2;
+	width: 300px;
+	height: 30px;
+}
+
+hr {
+	color: #959595;
+	/*for shortening the hr, use margin, not padding*/
+	margin: 40px 10%;
+	border: none;
+	height: 2px;
+	color: #959595;
+	background-color: #959595;	
+}
+
+/*Preventing you from selecting the text. Because annoyances*/
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.menu {
+	position: absolute;
+	width: 300px;
+	height: 45px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: 'Lora';
+	font-size: 1.5em;
+	color: #EE71A2;
+}
+
+pre {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lora';
+	font-size: 1em;
+	color: #EE71A2;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\SCROLLING//////////////////////////////*/
+
+
+/*for the content that needs to be scrolled*/
+.scroll {
+	margin: 0 auto;
+	padding: 20px 10px;
+	background: #2E2E2E;
+	width: 600px;
+	height: 350px;
+	overflow: auto;
+	-moz-box-shadow: 0 0 16px 6px #2B2B2B;
+	-webkit-box-shadow: 0 0 16px 6px #2B2B2B;
+	box-shadow: 0 0 16px 6px #2B2B2B;
+	/*http://stackoverflow.com/questions/9707397/making-a-div-vertically-scrollable-using-css*/
+}
+
+/* http://codemug.com/html/custom-scrollbars-using-css/ */
+body {
+	/*Internet Explorer*/
+	scrollbar-base-color: #363636;
+	scrollbar-3dlight-color: #9DCC5A;
+	scrollbar-highlight-color: #464646;
+	scrollbar-track-color: #252525;
+	scrollbar-arrow-color: #9DCC5A;
+	scrollbar-shadow-color: #555555;
+	scrollbar-dark-shadow-color: #C2C2C2;
+}
+
+/*Chrome*/
+::-webkit-scrollbar {
+	height: 6px;
+	width: 12px;
+}
+/*::-webkit-scrollbar-button {
+	background-color: #95CC5A;
+}*/
+	
+::-webkit-scrollbar-track {
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);*/
+	-webkit-box-shadow: inset 0 0 6px #959595;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #9DCC5A;
+	background-color: #959595;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\JQUERY SCROLLING/////////////////////////*/
+
+/*taken from http://jsfiddle.net/akhurshid/XbjAe/ */
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+}
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: #777;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #555;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.jspDrag
+{
+    background: #888;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 4px;
+    margin: 0 2px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+{
+    background: #333;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 8px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 8px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+    margin: 0 -3px 0 0;
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\TEXT FX//////////////////////////////*/
+
+.accent {
+	color: #EE71A2;
+	font-family: 'Lora';
+	font-size: 1.1em;
+}
+
+.link {
+	text-decoration: underline;
+	/*font-weight: bold;*/
+}
+
+a:link {
+	color: #959595;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #9DCD5B;
+	*/
+	color: #959595;
+	text-decoration: none;
+}
+
+a:hover, .selected{
+	color: #9DCC5A;
+	text-decoration: none;
+}
+

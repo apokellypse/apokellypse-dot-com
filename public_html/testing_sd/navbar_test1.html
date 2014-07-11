@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--I like typing my html pages from scratch, because if from-scratch cookies can taste better than store bought, from-scratch web pages should taste better too.-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kelly Yu">
+		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
+		<title>Kelly Yu | Navbar 1.0</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home_test.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="tabicondark2.png">
+		<script type="text/javascript">
+		function swap(one, two) {
+			document.getElementById(one).style.display = 'block';
+			document.getElementById(two).style.display = 'none';
+		}
+		function show(element) {
+			document.getElementById(element).style.display = 'block';
+		}
+		function hide(element) {
+			document.getElementById(element).style.display = 'none';
+		}
+		//technically I could condense functions by making a single function for show/hide using a toggle but whatever
+
+		//function aInfo() {
+			//var text = "About Me"
+			//get the element that you want to change
+			//var info = document.getElementById("<%= info.ClientID %>");
+			//info.value = text;
+		//}
+        </script>
+
+	</head>
+	
+	<body id="content">
+		<div class="noselect" id="apokellypse">
+		<!--I considered using font first for the logo/navigation panel, but apparently that's bad practice - whoops.
+		Guess I'll have to use images/image maps now. -->
+			<!--<p class="noselect" id="apokellypse" > -->
+				<span 
+				onMouseOver="show('about');hide('home_main')" 
+				onMouseOut="hide('about');show('home_main')">
+				<a href="navbar_test1.html">a
+					<!--<span class="hasinfo">About Me</span>-->
+					<!--the above was a messy experiment -->
+				</a></span>
+				<span 
+				onMouseOver="show('projects');hide('home_main')" 
+				onMouseOut="hide('projects');show('home_main')">
+				<a href="navbar_test1.html">p </a></span>
+				<!--I put spaces after each letter as a 'hacky' way to make sure that the borders of each div box were touching each other-->
+				<span 
+				onMouseOver="show('odds&ends');hide('home_main')" 
+				onMouseOut="hide('odds&ends');show('home_main')">
+				<a href="navbar_test1.html">o </a></span>
+				<!--Using span introduces these weird spaces between the letters-->
+				<!--disable clicking on home when you're one home
+				
+				<span onMouseOver="show('home_main')" onMouseOut="hide('home_main')"><a href="home.html">
+				-->
+				<span id="kelly" class="selected">
+				<span>k</span>
+				<span>e</span>
+				<span>l</span>
+				<span>l</span>
+				<span>y</span>
+				</span>
+				<!--</a>
+				</span>
+				-->
+				<span 
+				onMouseOver="show('portfolio');hide('home_main')" 
+				onMouseOut="hide('portfolio');show('home_main')">
+				<a href="navbar_test1.html">p </a></span>
+				<span 
+				onMouseOver="show('skills');hide('home_main')" 
+				onMouseOut="hide('skills');show('home_main')">
+				<a href="navbar_test1.html">s </a></span>
+				<span 
+				onMouseOver="show('extra');hide('home_main')" 
+				onMouseOut="hide('extra');show('home_main')">
+				<a href="navbar_test1.html">e</a></span>
+				<!--<br>
+				<button id="info" class="astext" value="button" disabled></button> -->
+			<!--</p>-->
+		</div>
+		<div style="display:none" class="noselect small" id="about">
+			about me
+		</div>
+		<div style="display:none" class="noselect small" id="projects">
+			projects
+		</div>
+		<div style="display:none" class="noselect small" id="odds&ends">
+			odds & ends
+		</div>
+		<div class="noselect small" id="home_main">
+			home
+		</div>
+		<div style="display:none" class="noselect small" id="portfolio">
+			portfolio
+		</div>
+		<div style="display:none" class="noselect small" id="skills">
+			skills & experience
+		</div>
+		<div style="display:none" class="noselect small" id="extra">
+			extracurriculars
+		</div>
+		
+		<hr>
+	</body>
+</html>
+	
+				

@@ -1,0 +1,130 @@
+#content {
+	background-color: #363636;
+}
+
+/*for the home button alignment*/
+#home{
+	position: relative;
+	font-size: 2em;
+	text-align: right;
+}
+
+/*This is for the logo page, for the svg logo and "enter" text*/
+/*Also used for the "in development" message*/
+#logo {
+	display: block;
+	margin-top: 25%;
+	margin-left: 55%;
+	width: 30%;
+	margin-right: auto%;
+	color: #959595;
+}
+
+/*This is used for the svg logo positioning*/
+object {
+	display: block;
+	position: absolute;
+}
+
+/*This was used for the "Enter" text */
+p.home {
+	display: block;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 18%;
+	margin-right: auto;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3em;
+}
+
+p {
+	text-align: left;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5em;
+	color: #C2C2C2;
+	margin: 0% 15%;
+}
+
+ul, li{
+	text-align: left;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
+	color: #959595;
+	margin: 0% 10%;
+}
+
+/*For the letters apokellypse*/
+#apokellypse {
+	position: aboslute;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	left: 0;
+	right: 0; 
+	/*THANK YOU SO MUCH STACKOVERFLOW http://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element */
+	text-align: center;
+	font-size: 5em;
+	font-family: 'Opens Sans Condensed', sans-serif;
+	color: #959595;
+}
+
+
+.accent {
+	color: #EE71A2;
+}
+
+/*for all the help text when you hover over the link on the main page*/
+.small {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 16%;
+	left: 0;
+	right: 0; 
+	text-align: center;
+	font-size: 1.7em;
+	font-family: 'Opens Sans Condensed', sans-serif;
+	color: #EE71A2;
+}
+
+hr {
+	color: #959595;
+	/*for shortening the hr, use margin, not padding*/
+	margin: 3% 10% 3% 10%;
+	border: none;
+	padding: -50px;	
+	height: 2px;
+	color: #959595;
+	background-color: #959595;	
+}
+
+/*Preventing you from selecting the text. Because annoyances*/
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.link {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:link {
+	color: #959595;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #9DCD5B;
+	*/
+	color: #959595;
+	text-decoration: none;
+}
+
+a:hover, .selected{
+	color: #9DCC5A;
+}

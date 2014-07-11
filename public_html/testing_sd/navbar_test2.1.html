@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--I like typing my html pages from scratch, because if from-scratch cookies can taste better than store bought, from-scratch web pages should taste better too.-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kelly Yu">
+		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
+		<meta http-equiv="refresh" content="60">
+		<title>Kelly Yu | Home</title>
+		<!--There has GOT to be a better way to link these-->
+		<link rel="stylesheet" href="http://apokellypse.com/css/normalize.css">
+		<link rel="stylesheet" href="http://apokellypse.com/css/main.css">
+		<link rel="stylesheet" href="css/nav2.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="tabicondark2.png">
+		<script type="text/javascript">
+		/*function swap(one, two) {
+			document.getElementById(one).style.display = 'block';
+			document.getElementById(two).style.display = 'none';
+		}
+		function show(element) {
+			document.getElementById(element).style.display = 'block';
+		}
+		function hide(element) {
+			document.getElementById(element).style.display = 'none';
+		}*/
+		//technically I could condense functions by making a single function for show/hide using a toggle but whatever
+		
+		//constant
+		var count = 3;
+		
+		function display(element, word) {
+			document.getElementById(element).innerHTML = word;
+			if (word != 'home') {
+				console.log('not home')
+				document.getElementById(element).style.color = '#EE71A2';
+			}
+			if (word === 'home') {
+				console.log('inside display, if block');
+				document.getElementById(element).style.color = '#9DCD5B';
+			}
+		}
+		function highlight(element) {
+			document.getElementById(element).removeAttribute("href");
+			document.getElementById(element).style.color = '#9DCC5A';
+			count=3;
+		}
+		function dehighlight(element) {
+			document.getElementById(element).removeAttribute("href");
+			document.getElementById(element).style.color = '#959595';
+			count=3;
+		}
+		function resetHome() {
+			document.getElementById('default').removeAttribute("href");
+			count=3;
+		}
+		/*function makeGreen(element) {
+			document.getElementById(element).style.color = '#COED91';
+		}
+		var idlist = ["ab", "pr", "od", "kelly", "po", "sk", "ex"];*/
+		var menu = ["about me", "projects", "odds & ends", "home", "portfolio", "skills and experience", "extracurriculars"];
+		var urls = ["about", "projects", "odds&ends", "home", "portfolio", "skills", "extra"];
+		function goLeft(element) {
+			count = (count+6)%7;
+			document.getElementById(element).style.color = '#9DCD5B';
+			document.getElementById(element).innerHTML = menu[count];
+			document.getElementById(element).removeAttribute("href");
+			if (count!=3) {
+				document.getElementById(element).href = String(urls[count]) + ".html";
+				document.getElementById(element).style.color = '#EE71A2';
+			}
+			console.log(count);
+		}
+		/*function getNextLeftId() {
+			return String(idlist[(count+6)%7]);
+		}*/
+		function goRight(element) {
+			count = (count+1)%7;
+			document.getElementById(element).style.color = '#9DCD5B';
+			document.getElementById(element).innerHTML = menu[count];
+			document.getElementById(element).removeAttribute("href");
+			if (count!=3) {
+				document.getElementById(element).href = String(urls[count]) + ".html";
+				document.getElementById(element).style.color = '#EE71A2';
+			}
+			console.log(count); //works well in Chrome, but FF gives better error messages imo
+		}
+		/*function getNextRightId() {
+			return String(idlist[(count+1)%7]);
+		}*/
+        </script>
+
+	</head>
+	
+	<body id="content">
+		<div class="noselect" id="apokellypse">
+		<!--I considered using font first for the logo/navigation panel, but apparently that's bad practice - whoops.
+		Guess I'll have to use images/image maps now. -->
+			<!--<p class="noselect" id="apokellypse" > -->
+				<span id="ab" 
+				onMouseOver="display('default', 'about me');dehighlight('kelly')" 
+				onMouseOut="display('default', 'home');highlight('kelly');resetHome()">
+				<a href="about.html"> a 
+					<!--<span class="hasinfo">About Me</span>-->
+					<!--the above was a messy experiment -->
+				</a></span>
+				<span id="pr"
+				onMouseOver="display('default', 'projects');dehighlight('kelly')" 
+				onMouseOut="display('default', 'home');highlight('kelly');resetHome()">
+				<a href="projects.html"> p </a></span>
+				<span id="od"
+				onMouseOver="display('default', 'odds & ends');dehighlight('kelly')" 
+				onMouseOut="display('default', 'home');highlight('kelly');resetHome()">
+				<a href="odds&ends.html"> o </a></span>
+				<!--Using span introduces these weird spaces between the letters-->
+				<!--disable clicking on home when you're one home
+				
+				<span onMouseOver="show('home_main')" onMouseOut="hide('home_main')"><a href="home.html">
+				-->
+				<span id="kelly" class="selected">
+				<span>k</span>
+				<span>e</span>
+				<span>l</span>
+				<span>l</span>
+				<span>y</span>
+				</span>
+				<!--</a>
+				</span>
+				-->
+				<span id="po"
+				onMouseOver="display('default', 'portfolio');dehighlight('kelly')" 
+				onMouseOut="display('default', 'home');highlight('kelly');resetHome()">
+				<a href="portfolio.html"> p </a></span>
+				<span id="sk"
+				onMouseOver="display('default', 'skills & experience');dehighlight('kelly')" 
+				onMouseOut="display('default', 'home');highlight('kelly');resetHome()">
+				<a href="skills.html"> s </a></span>
+				<span id="ex"
+				onMouseOver="display('default', 'extracurriculars');dehighlight('kelly')" 
+				onMouseOut="display('default', 'home');highlight('kelly');resetHome()">
+				<a href="extra.html"> e </a></span>
+				<!--<br>
+				<button id="info" class="astext" value="button" disabled></button> -->
+			<!--</p>-->
+		</div>
+		<span class="noselect left">
+			<a href="#" onClick="goLeft('default')"><pre>&lt;!--</pre></a>
+		</span>
+		<span class="noselect right">
+			<a href="#" onClick="goRight('default')"><pre>--&gt;</pre></a>
+		</span>
+		<div class="noselect small"><span class="accent"><a class="legallyblonde" id="default">home</a></span></div>
+		
+		<hr>
+		<p class="paragraph">Hi there. Welcome to my website! Feel free to poke around. It is currently in development so pages may disappear, URLs may change, and so on. In the meantime check out 
+		<a href="projects.html"><span class="link accent">my projects</span></a>!
+		<br>
+		<br>
+		<span class="selected">Announcement!</span> <a href="about.html"><span class="link accent">about</span></a> page has been recently completed.
+		<br>
+		<br>
+		I'd like to put a blog on here. I think that requires knowing PHP - thank you Suni for letting me borrow the PHP book!
+		<br>
+		<br>
+		<span class="selected">Projected Completion Date: June 30th.</span></p>
+	</body>
+</html>
+	
+				

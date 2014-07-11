@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kelly Yu">
+		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
+		<title>Kelly Yu | About Me</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="images/tabicondark2.png" >
+		<script type="text/javascript">
+		var assigned = 0;
+		</script>
+		<script src="scripts/master.js"></script>
+	</head>
+	<body id="content">
+		<div class="noselect" id="apokellypse">
+			<a href="about.html"><span id="ab" class="selected">a </span></a>
+			
+			<span id="pr"
+			onMouseOver="display('default', 'projects', 'about me');dehighlight('ab')"
+			onMouseOut="display('default', 'about me', 'about me');highlight('ab');reset('default', 0)">
+			<a href="projects.html"> p </a></span>
+			<span id="od"
+			onMouseOver="display('default', 'odds & ends', 'about me');dehighlight('ab')"
+			onMouseOut="display('default', 'about me', 'about me');highlight('ab');reset('default', 0)">
+			<a href="odds&ends.html"> o </a></span>
+			<span id="kelly"
+			onMouseOver="display('default', 'home', 'about me');dehighlight('ab')"
+			onMouseOut="display('default', 'about me', 'about me');highlight('ab');reset('default', 0)">
+			<a href="home.html">
+			<span>k</span>
+			<span>e</span>
+			<span>l</span>
+			<span>l</span>
+			<span>y</span>
+			</a>
+			</span>
+			
+			<span id="po"
+			onMouseOver="display('default', 'portfolio', 'about me');dehighlight('ab')"
+			onMouseOut="display('default', 'about me', 'about me');highlight('ab');reset('default', 0)">
+			<a href="portfolio.html"> p </a></span>
+			
+			<span id="sk"
+			onMouseOver="display('default', 'skills & experience', 'about me');dehighlight('ab')"
+			onMouseOut="display('default', 'about me', 'about me');highlight('ab');reset('default', 0)">
+			<a href="skills.html"> s </a></span>
+			
+			<span id="ex"
+			onMouseOver="display('default', 'extracurriculars', 'about me');dehighlight('ab')"
+			onMouseOut="display('default', 'about me', 'about me');highlight('ab');reset('default', 0)">
+			<a href="extra.html"> e </a></span>
+		</div>
+		
+		<span class="noselect left">
+			<a href="#" onClick="goLeft('default')"><pre>&lt;!--</pre></a>
+		</span>
+		<span class="noselect right">
+			<a href="#" onClick="goRight('default')"><pre>--&gt;</pre></a>
+		</span>
+		<div class="noselect small"><span class="accent"><a href="about.html" class="legallyblonde" id="default">about meat</a></span></div>
+		
+		<hr>
+		<!--<div class="scroll">-->
+		<div class="panes">
+		<p class="boxxy">
+		<span class="accent">Where I'm from </span>
+		I was raised in suburban Michigan (the mitten!) for the majority of my life. I attended Reuther Middle School and Rochester High School before coming to sweet Ithaca to attend Cornell. I'm a first-generation Chinese-American, and connect a lot with the Asian cuisine my parents have made daily for me throughout my years at home. (can you imagine cooking everyday? That's what they did.)
+		<br>
+		<br>
+		<span class="accent">Where I'm at </span>
+		I'm currently pursuing Computer Science in Cornell's College of Engineering. I'm a rising sophomore, involved in the Big Red Marching Band as a saxophone and as a member of the band's Show Committee. My Wednesdays are spent with Cornell Computer Animation, a club my friends and I organized last year. On Fridays I go to Asian American InterVaristy, a Christian fellowship on campus. I've found great people from these three extracurriculars, friends I want to keep for life.
+		<br>
+		<br>
+		<span class="accent">Where I'm going </span>
+		As the years have gone by many things have changed - my appearance, my height, my interests, my personality, my music tastes - but a few things stayed very constant. These things include my love of books, learning new things, and God, who keeps me grounded on what matters. Right now my dream job would be working at Pixar as a Technical Director (or any position at Pixar, really). I'm currently looking forward to my first Graphics courses next semester and to SIGGRAPH in August - I'm a student volunteer there this year!</p>
+		</div>
+	</body>
+</html>
