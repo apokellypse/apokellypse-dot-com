@@ -742,4 +742,4 @@ FileETag None
 # </IfModule>
 
 #-----------KELLY ADDED THIS-----------
-Redirect 301 /index.html http://www.apokellypse.com/welcome.html
+#Redirect 301 /index.html http://www.apokellypse.com/welcome.html
