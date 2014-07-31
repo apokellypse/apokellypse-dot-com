@@ -16,6 +16,19 @@
 		<script type="text/javascript">
 			var pageNumber = 5;
 		</script>
+		<script type="text/javascript">
+		// //are we going to keep this?
+		// 	$(document).ready(function() {
+		// 		$('div.submenu').mouseenter(function() {
+		// 			console.log("i see you");
+		// 			$(this).parent().css('background', '#ffffff');
+		// 		});
+		// 		$('div.submenu').mouseleave(function() {
+		// 			console.log("i see you");
+		// 			$(this).parent().removeAttr('style');
+		// 		});
+		// 	});
+		</script>
 		<script type="text/javascript" src="scripts/script.js"></script>
 	</head>
 	
@@ -44,59 +57,69 @@
 		</nav>
 		<div id="container">
 			<!--This will function like a sidebar-->
-			<div id="aap"> <!--art, animation, photography = aap-->
-				<div>Jump to:</div>
-				<a href="#art"><div class="submenu">trad&amp;dig</div></a>
-				<div>-----</div>
-				<a href="#pix"><div class="submenu">animation</div></a>
-				<div>-----</div>
-				<a href="#foto"><div class="submenu">photography</div></a>
 			</div>
 			<div id="display"> <!--where the images will be displayed in a grid-->
-				<h1>Traditional and Digital</h1>
-				<div class="imgRow" id="art">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
+				<div class="imgPane" id="art">
+					<div class="submenu">traditional</div>
+					<div class="subCol">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+					</div>
+					<div class="subCol">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+					</div>
 				</div>
-				<div class="imgRow">
+				<div class="imgPane" id="pix">
+					<div class="submenu">animation</div>
 					<img src="images/art/stub.jpg">
 					<img src="images/art/stub.jpg">
 					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
+
 				</div>
-				<h1>Animation</h1>
-				<div class="imgRow" id="pix">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
+				<div class="imgPane" id="foto">
+					<div class="submenu">photography</div>
+					<div class="subCol">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+					</div>
+					<div class="subCol">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+					</div>
 				</div>
-				<div class="imgRow">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-				</div>
-				<h1>Photography</h1>
-				<div class="imgRow" id="foto">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-				</div>
-				<div class="imgRow">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-				</div>
-				<div class="imgRow">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
-					<img src="images/art/stub.jpg">
+				<div class="imgPane" id="sketch">
+					<div class="submenu">sketches</div>
+					<div class="subCol">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+					</div>
+					<div class="subCol">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+						<img src="images/art/stub.jpg">
+					</div>
 				</div>
 			</div>
 		</div>

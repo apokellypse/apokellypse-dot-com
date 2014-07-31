@@ -7,6 +7,7 @@ body {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
+	overflow-x: hidden;
 }
 
 header {
@@ -19,6 +20,17 @@ header {
 	box-shadow: 0 8px 6px -6px #969696;
 	margin: 6px 0;
 }
+
+
+header > img {
+	position: absolute;
+	height: 80px;
+	width: auto;
+	right: 1120px;
+	top: 20px;
+
+}
+
 
 /*for the "apokellypse" part*/
 pre {
@@ -52,7 +64,30 @@ nav div, div.submenu {
 	-webkit-transition: background .1s ease-in-out;
 }
 
-nav div:hover, div.submenu:hover {
+div.submenu {
+	font-size: 1.5em;
+	text-align: center;
+	font-family: Lora;
+	color: #d2817e;
+}
+
+div.imgPane:nth-child(1) > div.submenu {
+	width: 360px;
+}
+
+div.imgPane:nth-child(2) > div.submenu {
+	width: 240px;
+}
+
+div.imgPane:nth-child(3) > div.submenu {
+	width: 300px;
+}
+
+div.imgPane:nth-child(4) > div.submenu {
+	width: 210px;
+}
+
+nav div:hover {
 	/*background-color: #ffd9e6;*/
 	background-color: rgba(255, 191, 214, .3);
 }
@@ -97,7 +132,19 @@ nav > a:last-child > div {
 
 /*SECTION TWO: HOME PAGE*/
 
-#bio, #blog {
+#bio {
+	width: 355px; /*or 395?*/
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	/*background-color: #363636;*/
+	padding: 0px 20px;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 30px;
+}
+
+#blog {
 	width: 715px;
 	margin: 0 auto;
 	left: 0;
@@ -125,6 +172,10 @@ article h1, section h1 {
 	text-align: left;
 }
 
+aside h1 {
+	text-align: left;
+}
+
 
 /*END SECTION TWO*/
 
@@ -132,6 +183,15 @@ article h1, section h1 {
 aside p {
 	padding: 0 20px;
 }
+
+aside > article > p {
+	padding: 0px;
+}
+
+#aboutsite p {
+	padding: 0 20px;
+}
+
 
 strong {
 	font-family: Lora;
@@ -174,12 +234,16 @@ ul li:hover {
 
 footer {
 	clear: both; /*THIS IS IMPORTANT*/
-	width: 1160px;
+	/*width: 1160px;*/
+	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+	padding: 5px;
+	/*background: #d6d6d6;*/
+	/*z-index: -999;*/
 }
 
 /*PADDING FOR ANCHOR/TARGET JUMPS*/
@@ -264,7 +328,7 @@ div figure {
 
 /*FOR POST STYLING*/
 /*PUT UNDER A CLASS TO SIMPLIFY*/
-#club, .post {
+#club, .post, .thinpost {
 	display: block;
 	width: 715px;
 	margin: 0 auto;
@@ -282,6 +346,22 @@ div figure {
 	padding: 25px 20px;
 }
 
+.thinpost {
+	width: 355px;
+	margin-left: -20px;
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+.thinpost > img {
+	padding: 10px 0px;
+}
+
+.thinpost h1 {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
 /*END SECTION SIX*/
 
 /*SECTION SEVEN: SKILLS PAGE*/
@@ -294,52 +374,79 @@ div figure {
 	margin-left: 765px;
 }
 
-#otherSkills p {
-	padding: 0;
-
+#aboutsite {
+	width: 755px;
+	background-color: #ffffff;
+	font-family: Lato;
+	padding: 5px 0px;
+	margin-left: 405px; /*px math takes time*/
 }
+
+/*.homepage {
+	height: 500px;
+}*/
 
 /*SECTION EIGHT: PORTFOLIO*/
-/*for the rows of images*/
-.imgRow {
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-
-/*lightbox display area*/
 #display {
-	text-align: center;
+	width: 1160px;
+	margin: 0 auto;
 }
 
-/*portfolio images*/
-div#display div img {
-	width: 140px;
-	margin: 0 5px;
+div.imgPane, div.subCol {
+	display: inline-block;
+	vertical-align: top; /*VERTICAL ALIGN IS SO HANDY*/
 }
 
-div#aap div {
-	font-family: Lora;
-	display: inline;
+.imgPane img {
+	width: 100%;
+	height: auto;
+	margin: 2px 0;
+}
+
+div#art > div.subCol:nth-child(2) {
+	width: 197px;
+}
+
+div#art > div.subCol:nth-child(3) {
+	width: 157px;
+}
+
+div#foto > div.subCol:nth-child(2) {
+	width: 127px;
+}
+
+div#foto > div.subCol:nth-child(3) {
+	width: 167px;
+}
+
+div#sketch > div.subCol:nth-child(2) {
+	width: 90px;
+}
+
+div#sketch > div.subCol:nth-child(3) {
+	width: 110px;
+}
+
+#art {
+	width: 360px;
+}
+
+#pix {
+	width: 240px;
+	margin: 0 0 0 10px;
+}
+
+#foto {
 	width: 300px;
-	color: #53b3c9;
+	margin: 0 10px;
 }
 
-div#aap div.submenu {
-	font-family: Lora;
-	display: inline;
-	width: 300px;
-	color: #d2817e;
+#sketch {
+	width: 210px;
 }
-
-
-div#aap {
-	display: block;
-	text-align: center;
-}
-
 /*http://bavotasan.com/2011/a-simple-fade-with-css3/*/
-div.imgRow > img {
+div.imgPane img {
+	display: block;
 	opacity: 1;
 	transition: opacity .15s ease-in-out;
 	-moz-transition: opacity .15s ease-in-out;
@@ -349,6 +456,6 @@ div.imgRow > img {
 /*YAYAYAY*/
 /*I heard that child selectors are faster than descendant selectors. 
 If that's the case, I need to rewrite some of my CSS*/
-div.imgRow > img:hover {
+div.imgPane img:hover {
 	opacity: 0.5;
 }
