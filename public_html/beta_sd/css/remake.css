@@ -11,7 +11,8 @@ body {
 	background: -o-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* IE10+ */
 	background: linear-gradient(135deg, #f4f4f4 0%,#adadad 100%); /* W3C */right: 0;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
+	max-width: 99%;
 	min-height: 100vh;
 }
 
@@ -26,11 +27,10 @@ header {
 	-moz-box-shadow: 0 8px 6px -6px #969696;
 	box-shadow: 0 8px 6px -6px #969696;
 	margin: 20px auto 6px auto;
-	padding: 10px 0;
+	padding: 5px 0;
 }
 
 header > span:nth-child(n+4):nth-child(-n+4) > a {
-	visibility: visible;
 	color: #ffccde;
 }
 
@@ -46,6 +46,7 @@ header > img {
 
 /*for the "apokellypse" part*/
 pre {
+	visibility: visible;
 	display: inline;
 	font-family: Lato;
 }
@@ -53,12 +54,10 @@ pre {
 header > span, header > span > a {
 	color: #53B3C9;
 	/*color: #ffccde;*/
-	/*visibility: hidden;*/
 }
 
 header span a:hover, header span:hover {
 	color: #effcff;
-	/*visibility: visible;*/
 }
 
 /*needs more refining later*/
@@ -71,7 +70,7 @@ nav div, div.submenu {
 	display: inline-block;
 	margin: 3px -3px 0px -3px;
 	padding: 10px 10px;
-	color: #53b3c9;
+	color: #4B7983;
 	font-family: 'Lato', Arial, sans-serif;
 	font-size: 1.1em;
 	transition: background .1s ease-in-out;
@@ -126,14 +125,14 @@ nav > a > div {
 	border-bottom: 0px;
 	border-right: 1px;
 	border-left: 0px;
-	border-color: #cccccc;
+	border-color: #ffffff;
 	border-style: solid;
 }
 
 /*Thank you Kevin Chavez for telling me about CSS child selectors. 
 THEY ARE AWESOME.*/
 nav > a:last-child > div {
-	border-color: #ebebeb;
+	border-right: none;
 }
 
 #container {
@@ -169,8 +168,8 @@ nav > a:last-child > div {
 	width: 755px;
 	height: auto;
 	position: absolute;
-	top: 500px;
-	z-index: -999; 
+	top: 488px;
+	z-index: -5; 
 }
 
 #blog {
@@ -229,18 +228,18 @@ aside > article > p {
 strong {
 	font-family: Lora;
 	/*color: #303030;*/
-	color: #d2817e;
+	color: #D14F4A;
 	/*color: #ff4b45;*/
 	/*color: rgba(54, 68, 110, 1);*/
 }
 
 p {
 	font-family: Lato;
-	color: #4a4a4a;
+	color: #222222;
 }
 
 p a, p a:link, p a:visited {
-	color: #53b3c9;
+	color: #1A9EBD;
 }
 
 p a:hover {
@@ -307,7 +306,7 @@ h1 {
 	display: block;
 	text-align: center;
 	font-family: Lora;
-	color: #969696;
+	color: #363636;
 	font-size: 1.5em;
 }
 
