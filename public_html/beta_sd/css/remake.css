@@ -2,25 +2,37 @@
 
 /*inspired by soundcloud's design because it's beautiful*/
 body {
-	background-color: #ebebeb;
-	width: 100%;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
+	/*background-color: #ebebeb;*/
+	
+	/*thanks to ColorZilla for genereating a gradient*/
+	background: -moz-linear-gradient(-45deg, #f4f4f4 0%, #adadad 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f4f4f4), color-stop(100%,#adadad)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* IE10+ */
+	background: linear-gradient(135deg, #f4f4f4 0%,#adadad 100%); /* W3C */right: 0;
 	overflow-x: hidden;
+	min-height: 100vh;
 }
 
 header {
+	width: 1160px;
 	text-align: center;
-	font-size: 3em;
+	font-size: 3.3em;
 	font-family: Lato;
-	background-color: #53b3c9;
+	/*background-color: #53b3c9;*/
+	background-color: #53B3C9;
 	-webkit-box-shadow: 0 8px 6px -6px #969696;
 	-moz-box-shadow: 0 8px 6px -6px #969696;
 	box-shadow: 0 8px 6px -6px #969696;
-	margin: 6px 0;
+	margin: 20px auto 6px auto;
+	padding: 10px 0;
 }
 
+header > span:nth-child(n+4):nth-child(-n+4) > a {
+	visibility: visible;
+	color: #ffccde;
+}
 
 header > img {
 	position: absolute;
@@ -39,12 +51,14 @@ pre {
 }
 
 header > span, header > span > a {
-	color: #ffccde;
-	/*color: #ebebeb;*/
+	color: #53B3C9;
+	/*color: #ffccde;*/
+	/*visibility: hidden;*/
 }
 
 header span a:hover, header span:hover {
 	color: #effcff;
+	/*visibility: visible;*/
 }
 
 /*needs more refining later*/
@@ -58,7 +72,8 @@ nav div, div.submenu {
 	margin: 3px -3px 0px -3px;
 	padding: 10px 10px;
 	color: #53b3c9;
-	font-family: Lato;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 1.1em;
 	transition: background .1s ease-in-out;
 	-moz-transition: background .1s ease-in-out;
 	-webkit-transition: background .1s ease-in-out;
@@ -89,14 +104,15 @@ div.imgPane:nth-child(4) > div.submenu {
 
 nav div:hover {
 	/*background-color: #ffd9e6;*/
-	background-color: rgba(255, 191, 214, .3);
+	/*background-color: rgba(255, 191, 214, .3);*/
+	background-color: rgba(255, 255, 255, .5);
 }
 
 nav {
 	width: 1120px;
 	padding: 0 20px;
 	/*background-color: #ebebeb;*/
-	background-color: #ebebeb;
+	/*background-color: #ebebeb;*/
 	/*background-color: #ffffff;*/
 	margin: 0 auto;
 	text-align: center;
@@ -144,6 +160,19 @@ nav > a:last-child > div {
 	margin-bottom: 30px;
 }
 
+.homepage img {
+	height: 200px;
+	width: auto;
+}
+
+.homepage article:nth-child(4) > img {
+	width: 755px;
+	height: auto;
+	position: absolute;
+	top: 500px;
+	z-index: -999; 
+}
+
 #blog {
 	width: 715px;
 	margin: 0 auto;
@@ -155,6 +184,10 @@ nav > a:last-child > div {
 	margin-right: 5px;
 	margin-bottom: 30px;
 	/*border: 2px solid #bee4ed;*/
+}
+
+#aboutsite > article > p:nth-child(2) {
+	/*background: rgba(255, 183, 75, 0.5);*/
 }
 
 #sidebar {
@@ -197,6 +230,8 @@ strong {
 	font-family: Lora;
 	/*color: #303030;*/
 	color: #d2817e;
+	/*color: #ff4b45;*/
+	/*color: rgba(54, 68, 110, 1);*/
 }
 
 p {
@@ -312,11 +347,11 @@ div figure {
 /*SECTION FIVE: ADVENTURES PAGE*/
 #wordpress {
 	clear: both;
-	width: 99.5%;
-	height: 80%;
+	width: 1160px;
+	height: 75%;
 	overflow: hidden;
 	position: absolute;
-	margin: 0 auto;
+	margin: 10px auto 0 auto;
 	left: 0;
 	right: 0;
 	border: 0;
@@ -355,6 +390,8 @@ div figure {
 
 .thinpost > img {
 	padding: 10px 0px;
+	width: 100%;
+	height: auto;
 }
 
 .thinpost h1 {
