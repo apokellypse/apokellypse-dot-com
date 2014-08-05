@@ -82,7 +82,7 @@ div.submenu {
 	font-size: 1.5em;
 	text-align: center;
 	font-family: Lora;
-	color: #d2817e;
+	color: #D14F4A;
 }
 
 div.imgPane:nth-child(1) > div.submenu {
@@ -141,6 +141,10 @@ nav > a:last-child > div {
 	left: 0px;
 	right: 0px;
 	margin-top: 10px;
+}
+
+.white {
+	background: #ffffff;
 }
 
 /*END SECTION ONE*/
