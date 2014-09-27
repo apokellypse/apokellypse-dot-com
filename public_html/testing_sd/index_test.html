@@ -1,64 +1,50 @@
 <!DOCTYPE html>
-<!--I like typing my html pages from scratch, because if from-scratch cookies can taste better than store bought, from-scratch web pages should taste better too.-->
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
 		<meta name="author" content="Kelly Yu">
 		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
-		<title>Kelly Yu | Testing</title>	<!--http://stackoverflow.com/questions/1341089/using-meta-tags-to-turn-off-caching-in-all-browsers-->
-		<meta http-equiv="cache-control" content="max-age=0" />
-		<meta http-equiv="cache-control" content="no-cache" />
-		<meta http-equiv="expires" content="0" />
-		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-		<meta http-equiv="pragma" content="no-cache" />
-		<!--There has GOT to be a better way to link these-->
-		<link rel="stylesheet" href="http://apokellypse.com/css/normalize.css">
-		<link rel="stylesheet" href="http://apokellypse.com/css/main.css">
-		<link rel="stylesheet" href="css/testing.css">
+		<meta name="description" content="Kelly Yu's Testing Site, set aside for demos, archived material, and more. Kelly Yu is an undergraduate student studying Computer Science at Cornell University.">
+		<title>Kelly Yu | Testing</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/master.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="http://apokellypse.com/tabicondark2.png">
-		<script type="text/javascript">
-		//does this even work lol
-		var done = false;
-		function loadOnce() {
-			if (!done) {
-				window.location.reload();
-			else {}
-			done = true;
-		}
-		</script>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="something.png">
 	</head>
-	
-	<body id="content" onLoad="loadOnce()">
-		<div class="mainbox">
-			<div class="space"></div>	
-			<div class="block">
-				<p><span class="dino">Welcome</span><br>to my testing site. Here you will find demos, ideas, and things might be later published to <a href="http://apokellypse.com"><span class="link"><span class="accent">my main site</span></span></a>. I wish you immense joy and happiness as you navigate this site.</p>
-			</div>
-			<div class="misstable">
-				<p><span class="label">Table of Contents:</span></p>
-			</div>
-			<div class="block" id="list">
+	<body>
+		<header>
+			<h1>Testing</h1>
+			<h2>Welcome to my testing site.</h2>
+			<h3>Here you will find the in-progress things I am working on, as well as archived website elements. </h3>
+		</header>
+		<nav>
 			<ul>
-				<li><a href="navbar_test1.html"><span class="link"><span class="accent">Navigation Bar v1.0</span></span></a>
-				<br>the first one ever</li>
-				<li><a href="navbar_test1.1.html"><span class="link"><span class="accent">Navigation Bar v1.1</span></span></a>
-				<br>Due to many of my beta testers saying that the navigation was not obvious, I moved on to v2.0+</li>
-				<li><a href="navbar_test2.html"><span class="link"><span class="accent">Navigation Bar v2.0</span></span></a>
-				<br>this one looks best in Chrome. <br>Please, PLEASE I BEG THEE look at this only using Chrome. Also for some reason there's this extra margin when you first load the page; that's yet to be fixed</li>
-				<li><a href="navbar_test2.1.html"><span class="link"><span class="accent">Navigation Bar v2.1</span></span></a>
-				<br>IT FINALLY WORKS! I think this may be my final nav bar - I tried so hard to make it user friendly. Now, time for beta testing.
-				<li><a href="navbar_test2.1.1.html"><span class="link"><span class="accent">Navication Bar v2.1.1</span></span></a>
-				<br>A less buggy version of the previous one. I dare you to figure out what the bug was in v2.1. This is the current version.
-				<li><a href="hsctc_test.html"><span class="link"><span class="accent">HSCTC Site Makeover</span></span></a>
-				<br>this needs to be done soon</li>
-				<li><a href="css3test.html"><span class="link"><span class="accent">MY FIRST CSS3 ANIMATION YASSS</span></span></a>
-				<br>currently perusing the book "HTML 5 for Masterminds Edition 2" which is an okay webdev book. Maybe I'll put a review of it somewhere later.</li>
-				<li><a href="first_website.html"><span class="link"><span class="accent">THE FIRST</span></span></a>
-				<br>WEBSITE PUBLISHED TO MAH SERVER</li>
+				<a href="index_test.html"><li>Home</li></a>
+				<a href="old-websites/index.html"><li>Old Websites</li></a>
+				<a href="navbar/index.html"><li>Old Nav Bars</li></a>
+				<a href="demos-tutorials/index.html"><li>Demos/Tutorials</li></a>
 			</ul>
+		</nav>
+		<div id="container">
+			<div>
+				<p>Hi, I'm Kelly Yu. I am currently a rising sophomore at Cornell University, studying Computer Science.</p>
+				<p>I use this website as a handy complement to <a href="http://kellyyu.com">my main site</a>.</p>
 			</div>
+				<h3>All Contents:</h3>
+			<ul id="contents">
+				<li><a href="old-websites/first_website.html">First Website Published</a></li>
+				<li><a href="old-websites/hsctc_test.html">Rudimentary HSCTC idea</a></li>
+				<li><a href="old-websites/old_testing.html">Old Testing Site</a></li>
+				<li><a href="navbar/navbar_test1.html">Navigation Bar v1.0</a></li>
+				<li><a href="navbar/navbar_test1-1.html">Navigation Bar v1.1</a></li>
+				<li><a href="navbar/navbar_test2.html">Navigation Bar v2.0</a></li>
+				<li><a href="navbar/navbar_test2-1.html">Navigation Bar v2.1</a></li>
+				<li><a href="navbar/navbar_test2-1-1.html">Navigation Bar v2.1.1</a></li>
+				<li><a href="demos-tutorials/css3test.html">First Encounter with CSS3 Animations</a></li>
+			</ul>
 		</div>
 	</body>
 </html>
