@@ -9,15 +9,19 @@ $(document).ready(function() {
 	
 	function fadepost() {
 		$('.post:nth-child(n+2)').fadeOut(500); //hides all the posts
+		//I don't actually use this LOL
 	}
 	console.log('hi');
-	$('aside > ul > a').click(function() {
+	$('aside > ul > li > a').click(function() { //this is called when you click on one of the side links
 		hidepost();
 		$('footer').removeAttr('style'); //no longer need to pin it down
 		//also probably a better way to manage footers...I'll get to it
 		console.log('you clicked on a link');
-		var ind = $(this).index() + 2;
+		console.log('the index of the link you clicked is ' + $(this).parent().index());
+		//I access the index of the parent, to have each link correspond to its article
+		var ind = $(this).parent().index() + 2;
 		//$('.post:nth-child(' + ind + ')').show();
+		//fading in looks better
 		$('.post:nth-child(' + ind + ')').fadeIn(500);
 		
 		//Thanks to http://stackoverflow.com/questions/6677035/jquery-scroll-to-element?rq=1 for introducing me to animated page scroll.

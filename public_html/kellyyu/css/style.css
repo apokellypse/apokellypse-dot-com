@@ -1,0 +1,393 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background: url(../images/fisher.JPG) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*thanks for css-tricks.com for suggesting this method*/
+}
+
+header {
+	position: fixed;
+	font-size: 3.3em;
+	font-family: Lora;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.05);
+	background: rgba(240, 240, 240, 1);
+	z-index: 500;
+}
+
+a {
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #D9F8FF;
+}
+
+section a {
+	text-decoration: none;
+	color: #84319B;
+}
+
+section a:hover {
+	background: #D7D7D7;
+}
+
+nav div {
+	display: inline-block;
+	margin: 3px -3px 0px -3px;
+	padding: 10px 10px;
+	color: #4B7983;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: .9em;
+	transition: background .1s ease-in-out;
+	-moz-transition: background .1s ease-in-out;
+	-webkit-transition: background .1s ease-in-out;
+}
+
+div.submenu {
+	display: inline-block;
+	margin: 3px -3px 0px -3px;
+	padding: 10px 10px;
+	transition: background .1s ease-in-out;
+	-moz-transition: background .1s ease-in-out;
+	-webkit-transition: background .1s ease-in-out;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: Lora, sans-serif;
+	/*color: #D14F4A;*/
+	color: #f2f2f2;
+}
+
+div.imgPane:nth-child(1) > div.submenu {
+	width: 360px;
+}
+
+div.imgPane:nth-child(2) > div.submenu {
+	width: 240px;
+}
+
+div.imgPane:nth-child(3) > div.submenu {
+	width: 300px;
+}
+
+div.imgPane:nth-child(4) > div.submenu {
+	width: 210px;
+}
+
+nav div:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+nav {
+	padding: 30px 0 1px 0;
+	width: 100%;
+	font-size: .4em;
+	margin: 0 auto;
+	text-align: center;
+	height: 60px;
+	padding-right: 1%;
+}
+
+
+nav a:first-child {
+	font-size: 2em;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #53B3C9;
+	margin-right: 3%;
+}
+
+
+/*the border between each of the navigation buttons*/
+nav > a > div {
+	border-top: 0px;
+	border-bottom: 0px;
+	border-right: 1px;
+	border-left: 0px;
+	border-color: #ffffff;
+	border-style: solid;
+}
+
+/*Thank you Kevin Chavez for telling me about CSS child selectors. 
+THEY ARE AWESOME.*/
+nav > a:last-child > div {
+	border-right: none;
+}
+
+#container {
+	position: relative;
+	right: 50px;
+	float: right;
+	/*width: 100%;*/
+	padding: 90px 0px 0px 0px;
+	text-align: right;
+	overflow: auto;
+
+	border: 1px solid rgba(240, 240, 240, 0.3);
+}
+
+#container2 {
+	/*right: 0;*/
+	/*width: 100%;*/
+	padding: 95px 0px 0px 0px;
+	position: relative;
+	left: 200px;
+	width: 100vh;
+}
+
+
+.white {
+	background: #ffffff;
+}
+
+footer {
+	clear: both; /*THIS IS IMPORTANT*/
+	/*width: 1160px;*/
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	margin-bottom: 10px;
+	padding: 5px;
+	/*background: #d6d6d6;*/
+	/*z-index: -999;*/
+}
+
+/*PADDING FOR ANCHOR/TARGET JUMPS*/
+/*still don't understand this completely...*/
+p:before {
+	display: block;
+	content: " ";
+	margin-top: -10px;
+	height: 10px;
+	visibility: hidden;
+}
+
+/*END SECTION THREE*/
+
+/*SECTION FIVE: ADVENTURES PAGE*/
+#wordpress {
+	clear: both;
+	width: 1160px;
+	/*width: 90%;*/
+	height: 85%;
+	overflow: hidden;
+	position: absolute;
+	margin: 100px auto 0 auto;
+	left: 0;
+	right: 0;
+	border: 0;
+}
+
+/*END SECTION FIVE*/
+
+/*SECTION SIX: EXTRACURRICULARS PAGE*/
+
+/*FOR POST STYLING*/
+/*PUT UNDER A CLASS TO SIMPLIFY*/
+.thinpost {
+	display: block;
+	/*width: 715px;*/
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+	padding: 5px 20px;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	width: 355px;
+	margin-left: -20px;
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+.thinpost > img {
+	padding: 10px 0px;
+	width: 100%;
+	height: auto;
+}
+
+.thinpost h1 {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+/*END SECTION SIX*/
+
+/*SECTION EIGHT: PORTFOLIO*/
+#display {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+div.imgPane, div.subCol {
+	display: inline-block;
+	vertical-align: top; /*VERTICAL ALIGN IS SO HANDY*/
+}
+
+.imgPane img {
+	width: 100%;
+	height: auto;
+	margin: 2px 0;
+}
+
+div#art > div.subCol:nth-child(2) {
+	width: 197px;
+}
+
+div#art > div.subCol:nth-child(3) {
+	width: 157px;
+}
+
+div#foto > div.subCol:nth-child(2) {
+	width: 127px;
+}
+
+div#foto > div.subCol:nth-child(3) {
+	width: 167px;
+}
+
+div#sketch > div.subCol:nth-child(2) {
+	width: 90px;
+}
+
+div#sketch > div.subCol:nth-child(3) {
+	width: 110px;
+}
+
+#art {
+	width: 360px;
+}
+
+#pix {
+	width: 240px;
+	margin: 0 0 0 10px;
+}
+
+#foto {
+	width: 300px;
+	margin: 0 10px;
+}
+
+#sketch {
+	width: 210px;
+}
+/*http://bavotasan.com/2011/a-simple-fade-with-css3/*/
+div.imgPane img {
+	display: block;
+	opacity: 1;
+	transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-webkit-transition: opacity .15s ease-in-out;
+}
+
+/*YAYAYAY*/
+/*I heard that child selectors are faster than descendant selectors. 
+If that's the case, I need to rewrite some of my CSS*/
+div.imgPane img:hover {
+	opacity: 0.5;
+}
+
+/*LIGHTBOX STYLING*/
+#box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	text-align: center; /*this will make the image centered*/
+	z-index: 999;
+}
+
+#box img {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0; /*aligning in all directions*/
+	max-height: 90%;
+	width: auto;
+	position: absolute;
+	margin: auto;
+}
+
+/*NEW ERA CSS*/
+section {
+	text-align: right;
+	/*background: rgba(255, 255, 255, 0.5);*/
+	background: rgba(255, 255, 255, 0.9);
+	font-family: 'Lato', serif;
+	width: 400px;
+	right: 0;
+	padding: 15px 20px;
+
+	/*height: 100vh;*/
+}
+
+section:first-child {
+	margin-top: -30px;
+}
+
+section h1, h1 {
+	font-family: 'Lato', serif;
+	font-size: 2em;
+	text-align: center;
+	/*color: #555555;*/
+	/*color: #f2f2f2;*/
+	background: #325D66;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	color: rgba(240, 240, 240, 0.9);
+	padding: 10px;
+}
+
+section#about {
+	/*color: #f2f2f2;*/
+}
+
+section h2, h2 {
+
+	font-weight: normal;
+	text-align: left;
+	/*color: #4B7983;*/
+	/*color: #222222;*/
+	color: #732323;
+	font-size: 1.3em;
+	margin: 10px 0;
+}
+
+section h3, h3 {
+	font-weight: normal;
+	text-align: left;
+	font-size: 1.1em;
+	color: #B94646;
+	margin: 10px 0;
+}
+
+section article {
+	text-align: center;
+	/*padding: 15px 20px;*/
+}
+
+#about p.intro {
+	font-size: 1.1em;
+	font-family: 'Lato', sans-serif;
+	/*color: #f2f2f2;*/
+}
+
+.currentpage {
+	background: #53B3C9;
+}
+
+p {
+	text-align: left;
+}
