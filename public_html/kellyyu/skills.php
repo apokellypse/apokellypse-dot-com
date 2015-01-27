@@ -2,14 +2,7 @@
 <!--I like typing my html pages from scratch, because if from-scratch cookies can taste better than store bought, from-scratch web pages should taste better too.-->
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Kelly Yu">
-		<meta name="keywords" content="Kelly Yu, Kelly, Yu, apokellypse, Cornell, student, CS, compsci, computer science">
-		<meta name="description" content="Kelly Yu is an undergraduate student studying Computer Science in the College of Engineering of Cornell University">
-		<title>Kelly Yu</title>
-		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.css">
+		<?php include 'meta.php';?>
 	</head>
 	
 	<body>
@@ -72,12 +65,12 @@
 					<p><b>Cornell BEARS</b> | Summer 2014 - Present<br>
 						Vice President of Information Technology<br>
 						Fixed and maintained club <a href="http://cornellbears.org">website</a></p>
-					<p><b>Asian American InterVarsity Christian Fellowship</b> | Aug 2013 - Present<br>
+					<p><b>AAIV Christian Fellowship</b> | Aug 2013 - Present<br>
 						Small Group Core Team (Fall 2014)</p>
 				</article>
 			</section>
-			<h1>Other Skills</h1>
-			<section>
+			<h1 class="nodisplay-handheld">Other Skills</h1>
+			<section class="nodisplay-handheld">
 				<article>
 					<h2>food</h2>
 					<p>can make good <a target="_blank" href="http://allrecipes.com/Recipe/Mrs-Siggs-Snickerdoodles">snickerdoodles</a><br>
@@ -107,7 +100,7 @@
 					<p>can perform a lopsided cartwheel<br>
 					can do beginner swing dance</p>
 				</article>
-			</aside>
+			</section>
 		</div>
 		<?php include 'footer.php';?>
 	</body>

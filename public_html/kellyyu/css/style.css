@@ -92,6 +92,7 @@ nav {
 	text-align: center;
 	height: 60px;
 	padding-right: 1%;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
 
@@ -102,7 +103,6 @@ nav a:first-child {
 	background-color: #53B3C9;
 	margin-right: 3%;
 }
-
 
 /*the border between each of the navigation buttons*/
 nav > a > div {
@@ -277,6 +277,10 @@ div#sketch > div.subCol:nth-child(3) {
 	margin: 0 10px;
 }
 
+div#display > div {
+	display: inline-block;
+}
+
 #sketch {
 	width: 210px;
 }
@@ -390,4 +394,238 @@ section article {
 
 p {
 	text-align: left;
+}
+
+.section-form div {
+	display: inline;
+	float: left;
+	padding-right: 15px;
+	/*text-align: center;*/
+}
+
+input[type="checkbox"] {
+	margin: 10px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 5px;
+}
+
+article > form > div > p.form {
+	/*margin: 5px;*/
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+
+form div.text h2 {
+	display: inline-block;
+}
+
+form div.text {
+	text-align: left;
+}
+
+form div.text input {
+	display: inline-block;
+	float: right;
+	clear: right;
+	position: relative;
+	top: 12px;
+	/*text-align: right;*/
+	/*margin-right: 0px;*/
+}
+
+textarea {
+	resize: none;
+}
+
+table {
+	text-align: left;
+}
+
+th, td {
+	padding: 5px;
+	width: 40%;
+}
+
+tr:nth-child(even) {
+	background: rgba(217, 217, 217, 0.9);
+}
+
+/*MEDIA STYLES*/
+
+
+@media (max-width: 1875px) {
+
+	#container2 {
+		left: 5%;
+	}
+}
+
+@media (max-width: 1750px) {
+	#container2 {
+		left: 15%;
+	}
+
+	div.imgPane {
+		display: inline-block;
+	}
+
+	div#display {
+		display: block;
+		width: 1000px;
+	}
+}
+
+
+@media (max-width: 1500px) {
+	#container2 {
+		left: 12%;		
+	}
+
+	div#display {
+		width: 600px;
+	}
+}
+
+@media (max-width: 1250px) {
+
+
+	div.imgPane {
+		display: block;
+	}
+
+}
+
+
+@media (max-width: 1100px) {
+
+
+	#container2 {
+		margin: 0 auto;
+		left: 0;
+		padding: 50px 0 0 0;
+
+	}
+
+	div#display {
+		width: 360px;
+	}
+
+	div.imgPane {
+		display: block;
+	}
+
+	#container {
+		width: 440px;
+		float: none;
+		right: 0;
+		margin: 0 auto;
+	}
+
+}
+
+/*main handheld mode*/
+@media (max-width: 800px) {
+	body {
+		background: #4C8C9A;
+	}
+
+
+	#container2 {
+		margin: 0;
+	}
+
+	nav {
+		padding: 0;
+		height: 120px;
+	}
+
+	nav a:first-child {
+		display: block;
+		position: relative;
+		margin: 0;
+	}
+
+	#container {
+		/*padding: 120px 0px 0px 0px;*/
+		padding: 150px 0px 0px 0px;
+		width: 100%;
+		right: 0;
+		margin-bottom: 50px;
+		overflow-x: hidden;
+	}
+
+	section {
+		width: 80%;
+		padding-right: 20%;
+	}
+
+	.nodisplay-handheld {
+		display: none;
+	}
+
+	div.imgPane {
+		display: block;
+		margin: 0;
+	}
+
+	div.subCol {
+		display: block;
+	}
+
+	div.imgPane:nth-child(1) > div.submenu,
+	div.imgPane:nth-child(2) > div.submenu,
+	div.imgPane:nth-child(3) > div.submenu,
+	div.imgPane:nth-child(4) > div.submenu {
+		width: 95%;
+	}
+
+	div#art.imgPane > div.subCol > a > img, div.subCol > a > img {
+		width: 100vw;
+		height: auto;
+	}
+
+	#art, #pix, #foto, #sketch {
+		width: 100vw;
+		margin: 0;
+	}
+
+	#pix, #art, #sketch {
+		display: none;
+	}
+
+	#display {
+		width: 100vw;
+		margin: 0;
+	}
+
+	#container2 {
+		left: 0;
+		padding: 0;
+		margin-bottom: 400px;
+	}
+
+	#box, #box img {
+		display: none;
+		background: none;
+		/*prefer no lightbox on handheld devices*/
+	}
+
+	div.imgPane img:hover {
+	opacity: 1;
+	}
+
+}
+
+@media (max-width: 500px) {
+	nav {
+		height: 170px;
+	}
+
+	#container {
+		padding: 200px 0 0 0;
+	}
+	
 }
