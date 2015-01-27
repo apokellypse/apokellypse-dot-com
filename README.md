@@ -33,4 +33,4 @@ Picture Waterfall:
 ###### Nov 2014 - present
 
 Main Screen:
-![alt text](https://github.com/apokellypse/apokellypse-dot-com/blob/master/readme_imgs/kellyyu.png "Fish Website")
+![alt text](https://github.com/apokellypse/apokellypse-dot-com/blob/master/readme_imgs/kellyyu.png "Pictures")
