@@ -1,4 +1,4 @@
-# apokellypse-dot-com/blob/master
+# apokellypse-dot-com
 
 ###### Note:
 This repository is no longer active in terms of development. It includes a few of my initial websites when I first started learning web design.
