@@ -1,4 +1,4 @@
-<!DOCTYPE <html>
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Kelly Yu">
@@ -6,34 +6,85 @@
 	<meta name="description" content="Website for Ithaca's Annual Apple Harvest Festival">
 	<title>Ithaca Apple Harvest Festival 2014</title>
 	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/gentlescroll.js"></script>
 </head>
 <body>
 	<div id="container">
 	<header>
-		<div id="logo">
+		<nav>
 			<a href="index.html"><img src="images/logo.png" alt="logo"></a>
-		</div>
-		<div id="times">
-			<p><time datetime="2014-10-3">October 3</time>&ndash;<time datetime="2014-10-5">5</time>,&nbsp;2014</p>
-			<p><time datetime="2014-10-3">Friday October 3rd 12pm-6pm</time></p>
-			<p><time datetime="2014-10-4">Saturday October 4th 10am-6pm</time></p>
-			<p><time datetime="2014-10-5">Sunday October 5th 10am-6pm</time></p>
-		</div>
+			<div>
+				<a href="index.html">Home</a>
+				<a href="schedule.html">Event Schedule</a>
+				<a href="perf.html">Performances</a>
+				<a href="#top" class="currentpage">Vendors</a>
+				<div class="sub">
+					<a href="#food">Food Vendors</a>
+					<a href="#farm">Farmers</a>
+					<a href="#wine">Wine and Beer Vendors</a>
+					<a href="#ex">Exhibitors</a>
+					<a href="#art">Handmade Artisans</a>
+				</div>
+				<a href="sponsors.html">Sponsors and Support</a>
+				<a href="map.html">Map</a>
+				<div class="photocred">All photographs by <a href="http://kellyyu.com">Kelly Yu</a></div>
+			</div>
+		</nav>
 	</header>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="schedule.html">Event Schedule</a></li>
-			<li><a href="perf.html">Performances</a></li>
-			<li><a href="vendors.html">Vendors</a></li>
-			<li><a href="sponsors.html">Sponsors and Support</a></li>
-		</ul>
-	</nav>
 	<article>
-		<section>
+		<section id="food">
 			<h1>Participating Vendors</h1>
+			<img src="images/Capture3.JPG" alt="picture">
+		</section>
+
+		<section>
+			<h2>Food Vendors</h2>
+			<ul>
+				<li>B&amp;B Kettle Korn</li>
+				<li>Bella pizza</li>
+				<li>Ben &amp; Jerry's</li>
+				<li>Blooming Onion</li>
+				<li>Curly Fries</li>
+				<li>Camel Apples</li>
+				<li>Collegetown Crepes</li>
+				<li>Dondee's Fish 'n Chips</li>
+				<li>Fresh Lemonade</li>
+				<li>Funnel cakes</li>
+			</ul>
+			<ul>
+				<li>Gorgers Taco &amp; Subs</li>
+				<li>Hot Candied Apples</li>
+				<li>Island Cow Ice Cream</li>
+				<li>Kettle Corn Shop</li>
+				<li>Lao Village</li>
+				<li>New Delhi Diamonds</li>
+				<li>New York Almond Company</li>
+				<li>On The Street - Greek Cuisine</li>
+				<li>Pumpkin Funnel Cake</li>
+				<li>PDR's Mac'n Cheese</li>
+			</ul>
+			<ul>
+				<li>PDR's Sausage &amp; Dogs</li>
+				<li>Sangam Restaurant</li>
+				<li>Silent City Coffee</li>
+				<li>Star Truck</li>
+				<li>Taste of Thai</li>
+				<li>Taste of Thai Express</li>
+				<li>Tellez Mexican Catering</li>
+				<li>Tibetan Momobar</li>
+				<li>Travelers Kitchen - Potato Pancake</li>
+			</ul>
+		</section><!--end about-->
+
+		<section id="farm">
+			<img src="images/Capture12.JPG" alt="picture">
+		</section>
+
+		<section>
 			<h2>Farmers</h2>
 			<ul>
 				<li>AppleGrove farm</li>
@@ -41,46 +92,82 @@
 				<li>Baker's Acres</li>
 				<li>Comics For Collectors</li>
 				<li>Cornell Orchards ISOHO</li>
+			</ul>
+			<ul>
 				<li>Laughing Goat Fiber</li>
 				<li>Little Grey Bakery</li>
 				<li>Littltree Orchards</li>
 				<li>Maple River Syrup company</li>
 				<li>Teeter's Farm</li>
+			</ul>
+			<ul>
 				<li>Tompkins county 4-H Exchange Club</li>
 				<li>Tucker's Catering</li>
 				<li>Walter Osip</li>
 				<li>Ward's Maple Products</li>
 			</ul>
+		</section>
+
+		<section id="wine">
+			<img src="images/Capture10.JPG" alt="picture">
+		</section>
+
+		<section>
 			<h2>Wine and Beer Vendors</h2>
 			<ul>
 				<li>Ashley Lynn Winery</li>
 				<li>Bandwagon Brewpub</li>
 				<li>Bellwether Hard Cider</li>
+				<li class="whitespace">whitespace</li>
+			</ul>
+			<ul>
 				<li>Cortland Beer Company</li>
-				<li>Daring Drake Farm & Blackduck Cidery</li>
+				<li>Daring Drake Farm &amp; <br>Blackduck Cidery</li>
 				<li>Eve's Cidery</li>
+			</ul>
+			<ul>
 				<li>Montezuma Winery</li>
 				<li>Six Mile Creek Vineyards</li>
 				<li>Thousand Islands Winery</li>
+				<li class="whitespace">whitespace</li>
 			</ul>
+		</section>
+
+		<section id="ex">
+			<img src="images/Capture11.JPG" alt="picture">
+		</section>
+
+		<section>
 			<h2>Exhibitors</h2>
 			<ul>
 				<li>Barried Treasures</li>
 				<li>Christian Science Reading Room</li>
-				<li>Field & Stream</li>
+				<li>Field &amp; Stream</li>
+			</ul>
+			<ul>
 				<li>Finger Lakes School of Massage</li>
 				<li>Indigo Moon</li>
 				<li>Ithaca Family Chiropractic</li>
+			</ul>
+			<ul>
 				<li>Mid-Atlantic Waterproofing</li>
 				<li>Simply Alexis Photography</li>
+				<li class="whitespace">whitespace</li>
 			</ul>
+		</section>
+
+		<section>
+			<img src="images/Capture9.JPG" alt="picture">
+		</section>
+
+		<section id="art">
 			<h2>Handmade Artisans</h2>
 			<ul>
 				<li>Art on You</li>
 				<li>BeJeweled</li>
 				<li>Bible Wick Candles</li>
 				<li>Bloom</li>
-				<li>Breezeland Boutique & Bella Vanca Designs</li>
+				<li>Breezeland Boutique &amp; Bella Vanca Designs</li>
 				<li>Captivate by Erica</li>
 				<li>Cayuga Botanicals</li>
 				<li>Cloz's</li>
@@ -96,6 +183,9 @@
 				<li>Festive Face Painting</li>
 				<li>Festive Face Painting</li>
 				<li>forclaudiasssayke</li>
+				<!-- <li class="whitespace">whitespace</li> -->
+			</ul>
+			<ul>
 				<li>Four Leaf Soap LLC</li>
 				<li>Fudge Lady</li>
 				<li>Gayane's Gifts and Crafts</li>
@@ -108,14 +198,17 @@
 				<li>Katie Vaz Design</li>
 				<li>Kingsley Street Artisan Soaps</li>
 				<li>Laurel O'Brien</li>
-				<li>Leather & Lace</li>
+				<li>Leather &amp; Lace</li>
 				<li>Luna Sea Trading</li>
 				<li>Metal Magic</li>
 				<li>Michelle DaRin Jewelry</li>
 				<li>Moonlight</li>
 				<li>Patricia Originals</li>
 				<li>Rose Gottlieb</li>
-				<li>S & J Woodcrafts</li>
+
+			</ul>
+			<ul>
+				<li>S &amp; J Woodcrafts</li>
 				<li>Schoolyard Sugarbush</li>
 				<li>Second Season Mittens</li>
 				<li>Seneca Cottage Fudge Kitchen</li>
@@ -136,41 +229,11 @@
 				<li>Whisker Biscuits</li>
 				<li>whiskeysourproductionss</li>
 				<li>Wildflower Graphics</li>
+<!-- 				<li class="whitespace">whitespace</li>
+				<li class="whitespace">whitespace</li> -->
 			</ul>
-			<h2>Food Vendors</h2>
-			<ul>
-				<li>B&B Kettle Korn</li>
-				<li>Bella pizza</li>
-				<li>Ben & Jerry's</li>
-				<li>Blooming Onion</li>
-				<li>Curly Fries</li>
-				<li>Camel Apples</li>
-				<li>Collegetown Crepes</li>
-				<li>Dondee's Fish 'n Chips</li>
-				<li>Fresh Lemonade</li>
-				<li>Funnel cakes</li>
-				<li>Gorgers Taco & Subs</li>
-				<li>Hot Candied Apples</li>
-				<li>Island Cow Ice Cream</li>
-				<li>Kettle Corn Shop</li>
-				<li>Lao Village</li>
-				<li>New Delhi Diamonds</li>
-				<li>New York Almond Company</li>
-				<li>On The Street - Greek Cuisine</li>
-				<li>Pumpkin Funnel Cake</li>
-				<li>PDR's Mac'n Cheese</li>
-				<li>PDR's Sausage & Dogs</li>
-				<li>Sangam Restaurant</li>
-				<li>Silent City Coffee</li>
-				<li>Star Truck</li>
-				<li>Taste of Thai</li>
-				<li>Taste of Thai Express</li>
-				<li>Tellez Mexican Catering</li>
-				<li>Tibetan Momobar</li>
-				<li>Travelers Kitchen - Potato Pancake</li>
-			</ul>
+		</section>
 
-		</section><!--end about-->
 	</article>
 	</div><!--end container-->
 </body>
