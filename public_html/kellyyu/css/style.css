@@ -2,31 +2,20 @@
 
 /*inspired by soundcloud's design because it's beautiful*/
 body {
-	/*background-color: #ebebeb;*/
+	background-color: #2c2c2c;
 	
-	/*thanks to ColorZilla for genereating a gradient*/
-	background: -moz-linear-gradient(-45deg, #f4f4f4 0%, #adadad 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f4f4f4), color-stop(100%,#adadad)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg, #f4f4f4 0%,#adadad 100%); /* IE10+ */
-	background: linear-gradient(135deg, #f4f4f4 0%,#adadad 100%); /* W3C */right: 0;
 	/*overflow-x: hidden;*/
 	max-width: 99%;
 	min-height: 100vh;
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	width: 250px;
 	text-align: center;
 	font-size: 3.3em;
 	font-family: Lora;
-	/*background-color: #53b3c9;*/
-	background-color: #53B3C9;
-/*	-webkit-box-shadow: 0 8px 6px -6px #969696;
-	-moz-box-shadow: 0 8px 6px -6px #969696;
-	box-shadow: 0 8px 6px -6px #969696;*/
+	background-color: #6C8A91;
 	/*margin: 20px auto 6px auto;*/
 	margin: 0 auto;
 	right: 910px;
@@ -39,7 +28,7 @@ header {
 }*/
 
 header > img {
-	position: absolute;
+	position: fixed;
 	height: 80px;
 	width: auto;
 	right: 1120px;
@@ -57,12 +46,12 @@ header > img {
 
 header > span, header > span > a {
 	/*padding: 20px;*/
-	color: #fff;
+	color: #000;
 	/*color: #ffccde;*/
 }
 
 header span a:hover, header span:hover {
-	color: #D9F8FF;
+	color: #363636;
 }
 
 /*needs more refining later*/
@@ -109,29 +98,36 @@ div.imgPane:nth-child(4) > div.submenu {
 nav div:hover {
 	/*background-color: #ffd9e6;*/
 	/*background-color: rgba(255, 191, 214, .3);*/
-	background-color: rgba(255, 255, 255, .5);
+	background-color: rgba(255, 255, 255, .2);
 }
 
 nav {
-	width: 1120px;
-	padding: 10px 20px 10px 600px;
-	/*background-color: #ebebeb;*/
-	/*background-color: #ebebeb;*/
-	/*background-color: #ffffff;*/
-	margin: 0 auto;
+	position: fixed;
+	width: 250px;
 	text-align: center;
-	/*holy crap I wasted so much time trying to center this -_- */
-	/*background-color: #adccc1;*/
+	font-family: Lora;
+	/*margin: 20px auto 6px auto;*/
+	margin: 0 auto;
+	right: 910px;
+	top: 90px;
+	left: 0;
+	padding: 5px 0;
+	/*padding: 10px 20px 10px 20px;*/
+	background-color: #1a1a1a;
 }
 
 /*the border between each of the navigation buttons*/
 nav > a > div {
+	margin: 0 auto;
+	display: block;
 	border-top: 0px;
 	border-bottom: 0px;
-	border-right: 1px;
+	border-right: 0px;
 	border-left: 0px;
 	border-color: #ffffff;
 	border-style: solid;
+	width: 200px;
+	height: 30px;
 }
 
 /*Thank you Kevin Chavez for telling me about CSS child selectors. 
@@ -141,11 +137,11 @@ nav > a:last-child > div {
 }
 
 #container {
-	width: 1160px;
+	width: 800px;
 	margin: 0 auto;
-	left: 0px;
 	right: 0px;
 	margin-top: 10px;
+	margin-right: 450px;
 }
 
 .white {
@@ -202,11 +198,11 @@ nav > a:last-child > div {
 #sidebar {
 	position: fixed;
 	width: 395px;
-	background-color: #ffffff;
+	background-color: #363636;
 	font-family: Lato;
 	padding: 5px 0px;
 	float: right;
-	margin-left: 765px;
+	margin-left: 565px;
 	/*border: 2px solid #bee4ed;*/
 }
 
@@ -238,18 +234,18 @@ aside > article > p {
 strong {
 	font-family: Lora;
 	/*color: #303030;*/
-	color: #D14F4A;
+	color: #FF7570;
 	/*color: #ff4b45;*/
 	/*color: rgba(54, 68, 110, 1);*/
 }
 
 p {
 	font-family: Lato;
-	color: #222222;
+	color: #f2f2f2;
 }
 
 p a, p a:link, p a:visited {
-	color: #1A9EBD;
+	color: #A6ACAD;
 }
 
 p a:hover {
@@ -258,7 +254,7 @@ p a:hover {
 }
 
 ul a, ul a:link, ul a:visited, ul a:hover {
-	color: #5679c6;
+	color: #9EBDFF;
 }
 
 /*affects how much is highlighed when you hover over li elements*/
@@ -266,14 +262,14 @@ li {
 	width: 310px;
 }
 
-#sidebar li {
+ul li {
 	transition: background .1s ease-in-out;
 	-moz-transition: background .1s ease-in-out;
 	-webkit-transition: background .1s ease-in-out;
 }
 
-#sidebar li:hover {
-	background-color: rgba(255, 191, 214, .5);
+ul li:hover {
+	background-color: rgba(255, 191, 214, .2);
 }
 
 footer {
@@ -316,7 +312,7 @@ h1 {
 	display: block;
 	text-align: center;
 	font-family: Lora;
-	color: #363636;
+	color: #f2f2f2;
 	font-size: 1.5em;
 }
 
@@ -328,6 +324,7 @@ h1 {
 
 #music, #books {
 	font-family: Lato, sans-serif;
+	color: #f2f2f2;
 }
 
 div figure {
@@ -360,11 +357,12 @@ div figure {
 /*SECTION FIVE: ADVENTURES PAGE*/
 #wordpress {
 	clear: both;
-	width: 1160px;
+	width: 860px;
 	height: 85%;
 	overflow: hidden;
 	position: absolute;
 	margin: 10px auto 0 auto;
+	margin-right: 400px;
 	left: 0;
 	right: 0;
 	border: 0;
@@ -378,11 +376,11 @@ div figure {
 /*PUT UNDER A CLASS TO SIMPLIFY*/
 #club, .post, .thinpost {
 	display: block;
-	width: 715px;
+	width: 515px;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	background-color: #ffffff;
+	background-color: #363636;
 	padding: 5px 20px;
 	float: left;
 	margin-right: 5px;
@@ -418,15 +416,15 @@ div figure {
 /*how is it floating right without the use of float: right*/
 #otherSkills {
 	width: 355px;
-	background-color: #ffffff;
+	background-color: #363636;
 	font-family: Lato;
 	padding: 5px 20px;
-	margin-left: 765px;
+	margin-left: 565px;
 }
 
 #aboutsite {
-	width: 755px;
-	background-color: #ffffff;
+	width: 450px;
+	background-color: #363636;
 	font-family: Lato;
 	padding: 5px 0px;
 	margin-left: 405px; /*px math takes time*/
